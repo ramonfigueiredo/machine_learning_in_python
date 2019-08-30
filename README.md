@@ -23,8 +23,6 @@ Machine Learning in Python
 
 2. Run the program
 
-Step-by-step:
-
 ```sh
 cd <folder_name>/
 
