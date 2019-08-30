@@ -3,7 +3,7 @@ Machine Learning in Python
 
 ## Data Preprocessing
 1. [Data Preprocessing](#data-preprocessing)
-2. [How to the Python program](#how-to-the-python-program)
+2. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
