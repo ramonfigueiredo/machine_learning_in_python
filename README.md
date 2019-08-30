@@ -14,7 +14,7 @@ Machine Learning in Python
 	* Splitting the dataset into the Training set and Test set
 	* Feature Scaling
 
-	a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/1_data_preprocessing/data_preprocessing.py)
+	a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
 
 ## How to run the python program?
 
