@@ -18,7 +18,7 @@ Machine Learning in Python
 
 ## How to run the python program?
 
-1. Install [virtualenv](https://virtualenv.pypa.io/en/latest/) and [Flask](https://palletsprojects.com/p/flask/)
+1. Install [virtualenv](https://virtualenv.pypa.io/en/latest/)
 	* To activate the virtualenv on Linux or MacOS: ```source venv/bin/activate```
 	* To activate the virtualenv on Windows: ```\venv\Script\activate.bat```
 
