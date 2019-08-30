@@ -8,7 +8,6 @@ Machine Learning in Python
 ## Data Preprocessing
 
 1. Data Preprocessing
-	* Importing the libraries
 	* Taking care of missing data
 	* Encoding categorical data
 	* Splitting the dataset into the Training set and Test set
