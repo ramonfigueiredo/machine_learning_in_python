@@ -3,7 +3,7 @@ Machine Learning in Python
 
 ## Data Preprocessing
 1. [Data Preprocessing](#data-preprocessing)
-2. [How to the python program](#how-to-the-python-program)
+2. [How to the Python program](#how-to-the-python-program)
 
 ## Data Preprocessing
 
@@ -15,13 +15,13 @@ Machine Learning in Python
 
 	a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
 
-## How to run the python program?
+## How to run the Python program?
 
 1. Install [virtualenv](https://virtualenv.pypa.io/en/latest/)
 	* To activate the virtualenv on Linux or MacOS: ```source venv/bin/activate```
 	* To activate the virtualenv on Windows: ```\venv\Script\activate.bat```
 
-## How to the python program
+2. Run the program
 
 Step-by-step:
 
