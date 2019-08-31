@@ -24,9 +24,12 @@ Machine Learning in Python
 	* Fitting Simple Linear Regression to the Training set
 	* Predicting the Test set results
 	* Visualising the Training set results (matplotlib: scatter plot)
+	![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 	* Visualising the Test set results (matplotlib: scatter plot)
+	![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 
 	a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
+
 
 ## How to run the Python program?
 
