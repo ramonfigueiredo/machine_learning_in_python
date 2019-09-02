@@ -9,28 +9,29 @@ Machine Learning in Python
 
 ## Data Preprocessing
 
-1. Data Preprocessing
+### Data Preprocessing
 
-	* Taking care of missing data
-	* Encoding categorical data
-	* Splitting the dataset into the Training set and Test set
-	* Feature Scaling
+* Taking care of missing data
+* Encoding categorical data
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
 
-	a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
+a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
 
 ## Regression
 
-1. Simple Linear Regression
-	* Importing the dataset (Salary_Data.csv)
-	* Splitting the dataset into the Training set and Test set
-	* Fitting Simple Linear Regression to the Training set
-	* Predicting the Test set results
-	* Visualising the Training set results (matplotlib: scatter plot)
-	![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
-	* Visualising the Test set results (matplotlib: scatter plot)
-	![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+### Simple Linear Regression
 
-	a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
+* Importing the dataset (Salary_Data.csv)
+* Splitting the dataset into the Training set and Test set
+* Fitting Simple Linear Regression to the Training set
+* Predicting the Test set results
+* Visualising the Training set results (matplotlib: scatter plot)
+![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+* Visualising the Test set results (matplotlib: scatter plot)
+![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+
+a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
 
 
 ## How to run the Python program?
