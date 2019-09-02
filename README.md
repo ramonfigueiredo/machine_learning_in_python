@@ -42,6 +42,7 @@ a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machi
 * Splitting the dataset into the Training set and Test set
 * Fitting Multiple Linear Regression to the Training set
 * Predicting the Test set results
+* Building the optimal model using Backward Elimination
 
 a.  [multiple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/2_multiple_linear_regression/multiple_linear_regression.py)
 

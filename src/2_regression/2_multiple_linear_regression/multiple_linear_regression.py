@@ -41,3 +41,6 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
+
+# Building the optimal model using Backward Elimination
+X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
