@@ -4,11 +4,12 @@ Machine Learning in Python
 ## Data Preprocessing
 1. [Data Preprocessing](#data-preprocessing)
 2. [Regression](#regression)
+	1. [Simple Linear Regression](#simple-linear-regression)
 3. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
-1. Data Preprocessing
+### Data Preprocessing
 	* Taking care of missing data
 	* Encoding categorical data
 	* Splitting the dataset into the Training set and Test set
@@ -18,7 +19,7 @@ Machine Learning in Python
 
 ## Regression
 
-1. Simple Linear Regression
+### Simple Linear Regression
 	* Importing the dataset (Salary_Data.csv)
 	* Splitting the dataset into the Training set and Test set
 	* Fitting Simple Linear Regression to the Training set
