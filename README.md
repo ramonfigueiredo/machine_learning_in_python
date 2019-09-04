@@ -13,12 +13,12 @@ Machine Learning in Python
 
 ### Data Preprocessing
 
+a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
+
 * Taking care of missing data
 * Encoding categorical data
 * Splitting the dataset into the Training set and Test set
 * Feature Scaling
-
-a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
 
 Go to [Contents](#contents)
 
