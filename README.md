@@ -39,6 +39,8 @@ a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machi
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 
+Go to [Contents](#contents)
+
 ### Multiple Linear Regression
 
 a.  [multiple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/2_multiple_linear_regression/multiple_linear_regression.py)
@@ -54,6 +56,8 @@ c. Multiple Linear Regression - Automatic Backward Elimination with p-values and
 * Fitting Multiple Linear Regression to the Training set
 * Predicting the Test set results
 * Building the optimal model using Backward Elimination
+
+Go to [Contents](#contents)
 
 ### Polynomial Regression
 
@@ -75,6 +79,8 @@ a.  [polynomial_regression.py](https://github.com/ramonfigueiredopessoa/machine_
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Polynomial_Regression-degree_3.png)
 * Visualising the Polynomial Regression results (degree = 4)
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Polynomial_Regression-degree_4.png)
+
+Go to [Contents](#contents)
 
 ## How to run the Python program?
 
@@ -101,3 +107,5 @@ python <name_of_python_program>.py
 ```sh
 deactivate
 ```
+
+Go to [Contents](#contents)
