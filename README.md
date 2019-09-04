@@ -6,6 +6,7 @@ Machine Learning in Python
 2. [Regression](#regression)
 	1. [Simple Linear Regression](#simple-linear-regression)
 	2. [Multiple Linear Regression](#multiple-linear-regression)
+	3. [Polynomial Regression](#polynomial-regression)
 3. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
@@ -27,10 +28,10 @@ a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_lea
 * Splitting the dataset into the Training set and Test set
 * Fitting Simple Linear Regression to the Training set
 * Predicting the Test set results
-* Visualising the Training set results (matplotlib: scatter plot)
-![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
-* Visualising the Test set results (matplotlib: scatter plot)
-![Visualising the Training set resultsr](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+* Visualising the Training set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+* Visualising the Test set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 
 a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
 
@@ -49,6 +50,27 @@ a.  [multiple_linear_regression.py](https://github.com/ramonfigueiredopessoa/mac
 b. Multiple Linear Regression - Automatic Backward Elimination with p-values only: [backward_elimination_with_p_values_only.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/2_multiple_linear_regression/backward_elimination_with_p_values_only.py)
 
 c. Multiple Linear Regression - Automatic Backward Elimination with p-values and adjusted R-squared: [backward_elimination_with_p_values_and_adjusted_r_squared.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/2_multiple_linear_regression/backward_elimination_with_p_values_and_adjusted_r_squared.py)
+
+### Polynomial Regression
+
+* Importing the dataset (Position_Salaries.csv)
+* Fitting Linear Regression to the Training set
+* Predicting a new result with Linear Regression
+* Visualising the Linear Regression results
+* Fitting Polynomial Regression (degree = 2, 3, and 4) to the Training set
+* Predicting a new result with Polynomial Regression (degree = 2, 3, and 4)
+* Visualising the Polynomial Regression (degree = 2, 3, and 4) results (for higher resolution and smoother curve)
+
+a.  [polynomial_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/polynomial_regression.py)
+
+* Visualising the Linear Regression results
+![Visualising the Linear Regression results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Linear_Regression.png)
+* Visualising the Polynomial Regression results (degree = 2)
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Polynomial_Regression-degree_2.png)
+* Visualising the Polynomial Regression results (degree = 3)
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Polynomial_Regression-degree_3.png)
+* Visualising the Polynomial Regression results (degree = 4)
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Polynomial_Regression-degree_4.png)
 
 ## How to run the Python program?
 
