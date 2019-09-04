@@ -24,6 +24,8 @@ a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_lea
 
 ### Simple Linear Regression
 
+a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
+
 * Importing the dataset ([Salary_Data.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Salary_Data.csv))
 * Splitting the dataset into the Training set and Test set
 * Fitting Simple Linear Regression to the Training set
@@ -32,8 +34,6 @@ a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_lea
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
-
-a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/simple_linear_regression.py)
 
 ### Multiple Linear Regression
 
