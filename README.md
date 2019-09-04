@@ -95,6 +95,8 @@ a.  [svr.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 
 ![Visualising the SVR results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/4_support_vector_regression/Visualising-the-SVR-results.png)
 
+Go to [Contents](#contents)
+
 ## How to run the Python program?
 
 1. Install [virtualenv](https://virtualenv.pypa.io/en/latest/)
