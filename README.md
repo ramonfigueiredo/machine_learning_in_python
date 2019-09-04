@@ -24,7 +24,7 @@ a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_lea
 
 ### Simple Linear Regression
 
-* Importing the dataset (Salary_Data.csv)
+* Importing the dataset ([Salary_Data.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Salary_Data.csv))
 * Splitting the dataset into the Training set and Test set
 * Fitting Simple Linear Regression to the Training set
 * Predicting the Test set results
