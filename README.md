@@ -1,7 +1,7 @@
 Machine Learning in Python
 ===========================
 
-## Data Preprocessing
+## Contents
 1. [Data Preprocessing](#data-preprocessing)
 2. [Regression](#regression)
 	1. [Simple Linear Regression](#simple-linear-regression)
@@ -19,6 +19,8 @@ Machine Learning in Python
 * Feature Scaling
 
 a.  [data_preprocessing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/1_data_preprocessing/data_preprocessing.py)
+
+Go to [Contents](#contents)
 
 ## Regression
 
