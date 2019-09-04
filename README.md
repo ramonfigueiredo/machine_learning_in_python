@@ -30,6 +30,8 @@ a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machi
 * Splitting the dataset into the Training set and Test set
 * Fitting Simple Linear Regression to the Training set
 * Predicting the Test set results
+* Visualising the Training and Test set results
+
 * Visualising the Training set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 * Visualising the Test set results
@@ -53,15 +55,15 @@ c. Multiple Linear Regression - Automatic Backward Elimination with p-values and
 
 ### Polynomial Regression
 
-* Importing the dataset (Position_Salaries.csv)
+a.  [polynomial_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/polynomial_regression.py)
+
+* Importing the dataset ([Position_Salaries.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Position_Salaries.csv))
 * Fitting Linear Regression to the Training set
 * Predicting a new result with Linear Regression
 * Visualising the Linear Regression results
 * Fitting Polynomial Regression (degree = 2, 3, and 4) to the Training set
 * Predicting a new result with Polynomial Regression (degree = 2, 3, and 4)
 * Visualising the Polynomial Regression (degree = 2, 3, and 4) results (for higher resolution and smoother curve)
-
-a.  [polynomial_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/polynomial_regression.py)
 
 * Visualising the Linear Regression results
 ![Visualising the Linear Regression results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/3_polynomial_regression/Truth_or_Bluff-Linear_Regression.png)
