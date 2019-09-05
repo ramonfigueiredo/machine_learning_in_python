@@ -28,6 +28,7 @@ Go to [Contents](#contents)
 ## Regression
 
 | Regression Model 				  |	Pros 																					 | Cons |
+| ------------------------------- |	---------------------------------------------------------------------------------------- | ---- |
 | Linear Regression 			  | Works on any size of dataset, gives informations about relevance of features 			 | The Linear Regression Assumptions |
 | Polynomial Regression 		  | Works on any size of dataset, works very well on non linear problems 					 | Need to choose the right polynomial degree for a good bias/variance tradeoff |
 | Support Vector Regression (SVR) | Easily adaptable, works very well on non linear problems, not biased by outliers 		 | Compulsory to apply feature scaling, not well known, more difficult to understand |
