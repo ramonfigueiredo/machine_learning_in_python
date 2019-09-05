@@ -9,6 +9,7 @@ Machine Learning in Python
 	3. [Polynomial Regression](#polynomial-regression)
 	4. [Support Vector Regression](#support-vector-regression)
 	5. [Decision Tree Regressor](#decision-tree-regressor)
+	6. [Random Forest Regression](#random-forest-regression)
 3. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
@@ -108,6 +109,19 @@ a.  [decision_tree_regression.py](https://github.com/ramonfigueiredopessoa/machi
 * Visualising the Decision Tree Regression results (higher resolution)
 
 ![Visualising the Decision Tree Regression results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/5_decision_tree_regression/Visualising-the-Decision-Tree-Regression-results.png)
+
+Go to [Contents](#contents)
+
+### Random Forest Regression
+
+a.  [random_forest_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/6_random_forest_regression/random_forest_regression.py)
+
+* Importing the dataset ([Position_Salaries.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/6_random_forest_regression/Position_Salaries.csv))
+* Fitting Random Forest Regression to the dataset
+* Predicting a new result with Random Forest Regression
+* Visualising the Random Forest Regression results (higher resolution)
+
+![Visualising the Random Forest Regression results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/6_random_forest_regression/Visualising-the-Random-Forest-Regression-results.png)
 
 Go to [Contents](#contents)
 
