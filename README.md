@@ -8,6 +8,7 @@ Machine Learning in Python
 	2. [Multiple Linear Regression](#multiple-linear-regression)
 	3. [Polynomial Regression](#polynomial-regression)
 	4. [Support Vector Regression](#support-vector-regression)
+	5. [Decision Tree Regressor](#decision-tree-regressor)
 3. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
@@ -94,6 +95,20 @@ a.  [svr.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 * Visualising the SVR results (for higher resolution and smoother curve)
 
 ![Visualising the SVR results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/4_support_vector_regression/Visualising-the-SVR-results.png)
+
+Go to [Contents](#contents)
+
+### Decision Tree Regressor
+
+a.  [decision_tree_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/decision_tree_regression.py)
+
+* Importing the dataset ([Position_Salaries.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/Position_Salaries.csv))
+* Feature Scaling
+* Fitting Support Vector Regression (SVR) to the dataset
+* Predicting a new result with Support Vector Regression (SVR)
+* Visualising the SVR results (for higher resolution and smoother curve)
+
+![Visualising the SVR results](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/Visualising-the-Decision-Tree-Regression-results.png)
 
 Go to [Contents](#contents)
 
