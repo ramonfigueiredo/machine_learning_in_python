@@ -100,15 +100,14 @@ Go to [Contents](#contents)
 
 ### Decision Tree Regressor
 
-a.  [decision_tree_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/decision_tree_regression.py)
+a.  [decision_tree_regression.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/5_decision_tree_regression/decision_tree_regression.py)
 
-* Importing the dataset ([Position_Salaries.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/Position_Salaries.csv))
-* Feature Scaling
-* Fitting Support Vector Regression (SVR) to the dataset
-* Predicting a new result with Support Vector Regression (SVR)
-* Visualising the SVR results (for higher resolution and smoother curve)
+* Importing the dataset ([Position_Salaries.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/5_decision_tree_regression/Position_Salaries.csv))
+* Fitting Decision Tree Regression to the dataset
+* Predicting a new result with Decision Tree Regression
+* Visualising the Decision Tree Regression results (higher resolution)
 
-![Visualising the SVR results](https://github.com/ramonfigueiredopessoa/machine_learning_in_r/blob/master/src/2_regression/5_decision_tree_regression/Visualising-the-Decision-Tree-Regression-results.png)
+![Visualising the Decision Tree Regression results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/5_decision_tree_regression/Visualising-the-Decision-Tree-Regression-results.png)
 
 Go to [Contents](#contents)
 
