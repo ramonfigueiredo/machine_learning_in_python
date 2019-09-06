@@ -185,6 +185,19 @@ Go to [Contents](#contents)
 
 a.  [svm.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/3_support_vector_machine/svm.py)
 
+* Importing the dataset ([Social_Network_Ads.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/3_support_vector_machine/Social_Network_Ads.csv))
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Fitting SVM to the Training set
+* Predicting the Test set results
+* Making the Confusion Matrix
+* Visualising the Training set results
+* Visualising the Test set results
+
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/3_support_vector_machine/Visualising-the-Training-set-results.png)
+
+![Visualising-the-Test-set-results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/3_support_vector_machine/Visualising-the-Test-set-results.png)
+
 Go to [Contents](#contents)
 
 ### Kernel SVM
