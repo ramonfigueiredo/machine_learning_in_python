@@ -261,6 +261,19 @@ Go to [Contents](#contents)
 
 a.  [random_forest_classification.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/7_random_forest_classification/random_forest_classification.py)
 
+* Importing the dataset ([Social_Network_Ads.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/7_random_forest_classification/Social_Network_Ads.csv))
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Fitting Random Forest Classification to the Training set
+* Predicting the Test set results
+* Making the Confusion Matrix
+* Visualising the Training set results
+* Visualising the Test set results
+
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/7_random_forest_classification/Visualising-the-Training-set-results.png)
+
+![Visualising-the-Test-set-results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/3_classification/7_random_forest_classification/Visualising-the-Test-set-results.png)
+
 Go to [Contents](#contents)
 
 ## How to run the Python program?
