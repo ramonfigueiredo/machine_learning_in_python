@@ -331,7 +331,7 @@ a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_pyt
 * Importing the dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Mall_Customers.csv))
 * Using the [dendrogram](https://en.wikipedia.org/wiki/Dendrogram) to find the optimal number of clusters
 * Fitting Hierarchical Clustering to the dataset. The fit method returns for each observation which cluster it belongs to.
-* Plotting the Dendrogram
+* Plotting the Dendrogram (euclidean distance and the ward linkage criterion)
 	* According to the Dendrogram the best number of cluster in the mall customers dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/1_k_means_clustering/Mall_Customers.csv)) is 5
 
 ![Dendrogram](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Dendrogram.png)
