@@ -49,7 +49,7 @@ plt.scatter(X[y_kmeans == 1, 0], X[y_kmeans == 1, 1], s = 100, c = 'blue', label
 # So, cluster 3 is the cluster of clients that would be the main potential target of the mall marketing campaigns
 # and it would be very insighful for them all to understand what kind of products are bought by the clients in this cluster 
 plt.scatter(X[y_kmeans == 2, 0], X[y_kmeans == 2, 1], s = 100, c = 'green', label = 'Cluster 3')
-# Cluster 4 has low income and low spending score. A better name for this cluster of clients as "Careless clients" 
+# Cluster 4 has low income and high spending score. A better name for this cluster of clients as "Careless clients"
 plt.scatter(X[y_kmeans == 3, 0], X[y_kmeans == 3, 1], s = 100, c = 'cyan', label = 'Cluster 4')
 # Cluster 5 has low income and low spending score. A better name for this cluster of clients as "Sensible clients" 
 plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 100, c = 'magenta', label = 'Cluster 5')
