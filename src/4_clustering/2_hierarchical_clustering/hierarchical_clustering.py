@@ -19,6 +19,14 @@ plt.show()
 
 # Fitting Hierarchical Clustering to the dataset
 from sklearn.cluster import AgglomerativeClustering
+# affinity = euclidean. Can be “euclidean”, “l1”, “l2”, “manhattan”, “cosine”, or “precomputed”
+# linkage = ward: minimizes the variance of the clusters being merged. 
+'''
+Other options: 
+- "complete" or maximum linkage uses the maximum distances between all observations of the two sets.
+- "average" uses the average of the distances of each observation of the two sets.
+- "single" uses the minimum of the distances between all observations of the two sets.
+'''
 hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
 y_hc = hc.fit_predict(X)
 print("Fitting K-Means to the dataset: ", y_hc)
