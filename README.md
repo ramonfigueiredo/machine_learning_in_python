@@ -20,6 +20,7 @@ Machine Learning in Python
 	7. [Random Forest Classification](#random-forest-classification)
 4. [Clustering](#clustering)
 	1. [K-Means Clustering](#k-means-clustering)
+	2. [Hierarchical Clustering](#hierarchical-clustering)
 5. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
@@ -320,6 +321,30 @@ a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_pyt
 	* Cluster 5 has low income and low spending score. A better name for this cluster of clients as "Sensible clients"
 	
 ![Clusters of customers](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/1_k_means_clustering/Clusters-of-customers.png)
+
+Go to [Contents](#contents)
+
+### Hierarchical Clustering
+
+a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/hierarchical_clustering.py)
+
+* Importing the dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Mall_Customers.csv))
+* Using the [dendrogram](https://en.wikipedia.org/wiki/Dendrogram) to find the optimal number of clusters
+* Fitting Hierarchical Clustering to the dataset. The fit method returns for each observation which cluster it belongs to.
+* Plotting the Dendrogram
+	* According to the Dendrogram the best number of cluster in the mall customers dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/1_k_means_clustering/Mall_Customers.csv)) is 5
+
+![Dendrogram](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Dendrogram.png)
+
+* Visualising the clusters
+	* Cluster 1 has high income and low spending score. A better name for this cluster of clients as "Careful clients"
+	* Cluster 2 has average income and average spending score. A better name for this cluster of clients as "Standard clients"
+	* Cluster 3 has high income and high spending score. A better name for this cluster of clients as "Target clients"
+		* Therefore, cluster 3 is the cluster of clients that would be the main potential target of the mall marketing campaigns and it would be very insighful for them all to understand what kind of products are bought by the clients in this cluster 
+	* Cluster 4 has low income and high spending score. A better name for this cluster of clients as "Careless clients" 
+	* Cluster 5 has low income and low spending score. A better name for this cluster of clients as "Sensible clients"
+	
+![Clusters of customers](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers.png)
 
 Go to [Contents](#contents)
 
