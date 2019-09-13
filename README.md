@@ -349,14 +349,10 @@ a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_pyt
 ![Clusters of customers](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers.png)
 
 * Clusters visialization with different distance metrics and different linkage criterion
-
-[Clusters of customers with **cosine** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-cosine-distance)
-
-[Clusters of customers with **euclidean** distance and 3 different linkage criterion (**ward**, **average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-euclidean-distance)
-
-[Clusters of customers with **L1** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L1-distance)
-
-[Clusters of customers with **L2** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L2-distance)
+	* [See clusters of customers with **cosine** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-cosine-distance)
+	* [See clusters of customers with **euclidean** distance and 3 different linkage criterion (**ward**, **average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-euclidean-distance)
+	* [See clusters of customers with **L1** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L1-distance)
+	* [See clusters of customers with **L2** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L2-distance)
 
 [Clusters of customers with **manhattan** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-manhattan-distance)
 
