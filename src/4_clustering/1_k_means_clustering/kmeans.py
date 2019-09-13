@@ -36,7 +36,7 @@ plt.ylabel('WCSS')
 plt.show()
 
 # Fitting K-Means to the dataset
-kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 42)
+kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 0)
 y_kmeans = kmeans.fit_predict(X)
 print("Fitting K-Means to the dataset:", y_kmeans)
 
