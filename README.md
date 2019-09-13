@@ -20,7 +20,7 @@ Machine Learning in Python
 	7. [Random Forest Classification](#random-forest-classification)
 4. [Clustering](#clustering)
 	1. [K-Means Clustering](#k-means-clustering)
-4. [How to run the Python program](#how-to-run-the-python-program)
+5. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
