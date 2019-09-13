@@ -19,10 +19,24 @@ plt.show()
 
 # Fitting Hierarchical Clustering to the dataset
 from sklearn.cluster import AgglomerativeClustering
-# affinity = euclidean. Can be “euclidean”, “l1”, “l2”, “manhattan”, “cosine”, or “precomputed”
+# affinity = euclidean. 
+'''
+Can be 
+- "euclidean"
+- "l1"
+- "l2"
+- "manhattan"
+- "cosine"
+- "precomputed"
+
+If linkage is "ward", only "euclidean" is accepted
+If "precomputed", a distance matrix (instead of a similarity matrix) is needed as input for the fit method.
+'''
+
 # linkage = ward: minimizes the variance of the clusters being merged. 
 '''
 Other options: 
+- "ward" minimizes the variance of the clusters being merged. If linkage is "ward", only "euclidean" is accepted.
 - "complete" or maximum linkage uses the maximum distances between all observations of the two sets.
 - "average" uses the average of the distances of each observation of the two sets.
 - "single" uses the minimum of the distances between all observations of the two sets.
