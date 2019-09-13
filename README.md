@@ -286,7 +286,7 @@ Go to [Contents](#contents)
 	* The Elbow method is a heuristic method of interpretation and validation of consistency within cluster analysis designed to help finding the appropriate number of clusters in a dataset
 * Using [k-means++](https://en.wikipedia.org/wiki/K-means%2B%2B) to select initial cluster centers for k-mean clustering in a smart way to speed up convergence
 * Plotting the Elbow method
-	* The Elbow method uses the Within-Cluster Sum of Squares (WCSS) metric = Sum of squared distances of samples to their closest cluster center.
+	* The Elbow method uses the [Within-Cluster Sum of Squares (WCSS)](https://en.wikipedia.org/wiki/K-means_clustering) metric = Sum of squared distances of samples to their closest cluster center.
 	* According to the Elbow method the best number of cluster in the mall customers dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/1_k_means_clustering/Mall_Customers.csv)) is 5
 * Fitting K-Means to the dataset. The fit method returns for each observation which cluster it belongs to.
 * Visualising the clusters
