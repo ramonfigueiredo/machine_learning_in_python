@@ -291,6 +291,11 @@ Go to [Contents](#contents)
 
 ## Clustering
 
+| Regression Model 				  |	Pros 																								   | Cons |
+| ------------------------------- |	------------------------------------------------------------------------------------------------------------- | ---- |
+| K-Means 			  			  | Simple to understand, easily adaptable, works well on small or large datasets, fast, efficient and performant | Need to choose the number of clusters |
+| Hierarchical Clustering 		  | The optimal number of clusters can be obtained by the model itself, practical visualisation with the dendrogram | Not appropriate for large datasets |
+
 ### K-Means Clustering
 
 a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/1_k_means_clustering/kmeans.py)
