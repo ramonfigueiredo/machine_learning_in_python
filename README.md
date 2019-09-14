@@ -22,7 +22,7 @@ Machine Learning in Python
 	1. [K-Means Clustering](#k-means-clustering)
 	2. [Hierarchical Clustering](#hierarchical-clustering)
 5. Association Rule Learning
-	1. [Apriori Intuition](#apriori)
+	1. [Apriori](#apriori)
 	2. [Eclat](#eclat)
 6. [How to run the Python program](#how-to-run-the-python-program)
 
