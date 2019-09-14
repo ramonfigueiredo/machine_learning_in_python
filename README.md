@@ -364,7 +364,7 @@ Go to [Contents](#contents)
 
 ### Apriori
 
-a.  [apriori.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/5_association_rule_learning/1_apriori/apriori.r)
+a.  [apriori.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/5_association_rule_learning/1_apriori/apriori.py)
 
 * Importing the dataset ([Market_Basket_Optimisation.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/5_association_rule_learning/1_apriori/Market_Basket_Optimisation.csv))
 	* The dataset describes a store located in one of the most popular places in the south of France. So, a lot of people go into the store.
