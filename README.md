@@ -23,7 +23,6 @@ Machine Learning in Python
 	2. [Hierarchical Clustering](#hierarchical-clustering)
 5. [Association Rule Learning](#association-rule-learning)
 	1. [Apriori](#apriori)
-	2. [Eclat](#eclat)
 6. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
@@ -378,10 +377,6 @@ a.  [apriori.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_py
 * Creating list of transactions
 * Training Apriori on the dataset
 * Visualising the results
-
-Go to [Contents](#contents)
-
-### Eclat
 
 Go to [Contents](#contents)
 
