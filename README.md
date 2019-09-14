@@ -21,7 +21,10 @@ Machine Learning in Python
 4. [Clustering](#clustering)
 	1. [K-Means Clustering](#k-means-clustering)
 	2. [Hierarchical Clustering](#hierarchical-clustering)
-5. [How to run the Python program](#how-to-run-the-python-program)
+5. Association Rule Learning
+	1. [Apriori Intuition](#apriori)
+	2. [Eclat](#eclat)
+6. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
@@ -354,6 +357,31 @@ a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_pyt
 	* [See clusters of customers with **L1** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L1-distance)
 	* [See clusters of customers with **L2** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-L2-distance)
 	* [See clusters of customers with **manhattan** distance and 3 different linkage criterion (**average**, **complete**, and **single**)](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Clusters-of-customers-manhattan-distance)
+
+Go to [Contents](#contents)
+
+## Association Rule Learning
+
+### Apriori
+
+a.  [apriori.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/5_association_rule_learning/1_apriori/apriori.r)
+
+* Importing the dataset ([Market_Basket_Optimisation.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/5_association_rule_learning/1_apriori/Market_Basket_Optimisation.csv))
+	* The dataset describes a store located in one of the most popular places in the south of France. So, a lot of people go into the store.
+	* And therefore the manager of the store noticed and calculated that on average each customer goes and buys something to the store once a week.
+	* This dataset contains 7500 transactions of all the different customers that bought a basket of products in a whole week.
+	* Indeed the manage took it as the basis of its analysis because since each customer is going an average once a week to the store then the transaction registered over a week is quite representative of what customers want to buy.
+	* So, based on all these 7500 transactions our machine learning model (*apriori*) is going to learn the different associations it can make to actually understand the rules.
+	* Such as if customers buy this product then they're likely to buy this other set of products.
+	* Each line in the database corresponds to a specific customer who bought a specific basket of product. 
+	* For example, in line 2 the customer bought burgers, meatballs, and eggs.
+* Creating list of transactions
+* Training Apriori on the dataset
+* Visualising the results
+
+Go to [Contents](#contents)
+
+### Eclat
 
 Go to [Contents](#contents)
 
