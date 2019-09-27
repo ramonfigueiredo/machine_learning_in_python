@@ -23,7 +23,6 @@ Machine Learning in Python
 	2. [Hierarchical Clustering](#hierarchical-clustering)
 5. [Association Rule Learning](#association-rule-learning)
 	1. [Apriori](#apriori)
-	2. [Eclat](#eclat)
 6. [Reinforcement Learning](#reinforcement-learning)
 	1. [Upper Confidence Bound](#upper-confidence-bound)
 	2. [Thompson Sampling](#thompson-sampling)
@@ -384,10 +383,6 @@ a.  [apriori.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_py
 
 Go to [Contents](#contents)
 
-### Eclat
-
-Go to [Contents](#contents)
-
 ## Reinforcement Learning
 
 ### Upper Confidence Bound
@@ -427,8 +422,6 @@ b.  [upper_confidence_bound.py](https://github.com/ramonfigueiredopessoa/machine
 ![equation 4](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation5.gif)
 		
 **Step 3.** We select the ad i that has the maximum UCB ![equation 6](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation6.gif)
-
-
 
 Go to [Contents](#contents)
 
