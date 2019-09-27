@@ -392,6 +392,25 @@ Go to [Contents](#contents)
 
 ### Upper Confidence Bound
 
+**Upper Confidence Bound Algorithm (UCB)**
+
+Step 1. At each round n, we consider two numbers for each ad i:
+	* ![equation 1]() $N_{i}(n)$ - the number of times the ad i was selected up to round n,
+	* ![equation 2]() $R_{i}(n)$ - the sum of rewards of the ad i up to round n.
+
+Step 2. From these two numbers we compute:
+	* the average reward of ad i up to round n
+
+![equation 3]()
+$\bar{r_{i}}(n)=\frac{R_{i}(n)}{N_{i}(n)}$
+
+	* the confidence interval ![equation 4]() $\left \lfloor \bar{r_{i}}(n)-\bar{\Delta}_{i} ,  \bar{r_{i}}(n)+\bar{\Delta}_{i} \right \rfloor$ at round n with
+
+![equation 4]()
+$\Delta_{i}(n)=\sqrt{\frac{3\log(n)}{2 N_{i}(n)}}$
+
+Step 3. We select the ad i that has the maximum UCB ![equation 5]() $\bar{r}_{i}(n)+\Delta_{i}(n)$
+
 Go to [Contents](#contents)
 
 ### Thompson Sampling
