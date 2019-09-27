@@ -395,8 +395,10 @@ Go to [Contents](#contents)
 **Upper Confidence Bound Algorithm (UCB)**
 
 Step 1. At each round n, we consider two numbers for each ad i:
-	* ![equation 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation1.gif) - the number of times the ad i was selected up to round n,
-	* ![equation 2]() $R_{i}(n)$ - the sum of rewards of the ad i up to round n.
+
+![equation 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation1.gif) - the number of times the ad i was selected up to round n,
+
+![equation 2](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation2.gif) - the sum of rewards of the ad i up to round n.
 
 Step 2. From these two numbers we compute:
 	* the average reward of ad i up to round n
