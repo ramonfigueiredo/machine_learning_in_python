@@ -392,25 +392,25 @@ Go to [Contents](#contents)
 
 ### Upper Confidence Bound
 
-**Upper Confidence Bound Algorithm (UCB)**
+### UCB algorithm
 
-Step 1. At each round n, we consider two numbers for each ad i:
+**Step 1.** At each round n, we consider two numbers for each ad i:
 
-![equation 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation1.gif) - the number of times the ad i was selected up to round n,
+* ![equation 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation1.gif) - the number of times the ad i was selected up to round n,
 
-![equation 2](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation2.gif) - the sum of rewards of the ad i up to round n.
+* ![equation 2](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation2.gif) - the sum of rewards of the ad i up to round n.
 
-Step 2. From these two numbers we compute:
-	* the average reward of ad i up to round n
-		* ![equation 3]() $\bar{r_{i}}(n)=\frac{R_{i}(n)}{N_{i}(n)}$
+**Step 2.** From these two numbers we compute:
 
-	* the confidence interval at round n with
-		* ![equation 4]() $\left\lfloor\bar{r_{i}}(n)-\bar{\Delta}_{i},\bar{r_{i}}(n)+\bar{\Delta}_{i}\right\rfloor$
+* the average reward of ad i up to round n
 
-	* ![equation 4]()
-		* $\Delta_{i}(n)=\sqrt{\frac{3\log(n)}{2 N_{i}(n)}}$
+![equation 3](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation3.gif)
 
-Step 3. We select the ad i that has the maximum UCB ![equation 5]() $\bar{r}_{i}(n)+\Delta_{i}(n)$
+* the confidence interval ![equation 4](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation4.gif) at round n with
+
+![equation 4](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation5.gif)
+		
+**Step 3.** We select the ad i that has the maximum UCB ![equation 6](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation6.gif)
 
 Go to [Contents](#contents)
 
