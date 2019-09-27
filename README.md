@@ -392,6 +392,22 @@ Go to [Contents](#contents)
 
 ### Upper Confidence Bound
 
+a.  [random_selection.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/random_selection.py)
+
+* Importing the dataset
+* Implementing Random Selection
+* Visualising the results
+
+![Random selection - Histogram of ads selections](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/Random-selection_Histogram-of-ads-selections.png)
+
+b.  [upper_confidence_bound.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/upper_confidence_bound.py)
+
+* Importing the dataset
+* Implementing UCB
+* Visualising the results
+
+![Upper Confidence Bound (UCB) - Histogram of ads selections](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/UCB-Histogram-of-ads-selections.png)
+
 ### UCB algorithm
 
 **Step 1.** At each round n, we consider two numbers for each ad i:
@@ -411,6 +427,8 @@ Go to [Contents](#contents)
 ![equation 4](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation5.gif)
 		
 **Step 3.** We select the ad i that has the maximum UCB ![equation 6](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/equation6.gif)
+
+
 
 Go to [Contents](#contents)
 
