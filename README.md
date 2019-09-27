@@ -394,7 +394,7 @@ Go to [Contents](#contents)
 
 a.  [random_selection.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/random_selection.py)
 
-* Importing the dataset
+* Importing the dataset ([Ads_CTR_Optimisation.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/Ads_CTR_Optimisation.csv))
 * Implementing Random Selection
 * Visualising the results
 
@@ -402,7 +402,7 @@ a.  [random_selection.py](https://github.com/ramonfigueiredopessoa/machine_learn
 
 b.  [upper_confidence_bound.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/upper_confidence_bound.py)
 
-* Importing the dataset
+* Importing the dataset ([Ads_CTR_Optimisation.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/1_upper_confidence_bound/Ads_CTR_Optimisation.csv))
 * Implementing UCB
 * Visualising the results
 
