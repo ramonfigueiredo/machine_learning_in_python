@@ -331,7 +331,7 @@ Go to [Contents](#contents)
 
 ### Hierarchical Clustering
 
-a.  [kmeans.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/hierarchical_clustering.py)
+a.  [hierarchical_clustering.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/hierarchical_clustering.py)
 
 * Importing the dataset ([Mall_Customers.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/4_clustering/2_hierarchical_clustering/Mall_Customers.csv))
 * Using the [dendrogram](https://en.wikipedia.org/wiki/Dendrogram) to find the optimal number of clusters
