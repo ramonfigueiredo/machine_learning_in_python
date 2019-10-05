@@ -513,6 +513,8 @@ The F-Measure will always be nearer to the smaller value of Precision or Recall.
 
 Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
 
+### Algorithm output
+
 ```
 Predicting the Test set results
  [1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 1 0 1
