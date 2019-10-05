@@ -26,7 +26,8 @@ Machine Learning in Python
 6. [Reinforcement Learning](#reinforcement-learning)
 	1. [Upper Confidence Bound](#upper-confidence-bound)
 	2. [Thompson Sampling](#thompson-sampling)
-7. [How to run the Python program](#how-to-run-the-python-program)
+7. [Natural Language Processing](#natural-language-processing)
+8. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
@@ -456,6 +457,61 @@ b.  [thompson_sampling.py](https://github.com/ramonfigueiredopessoa/machine_lear
 ![equation 3](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/2_thompson_sampling/equation3.gif)
 
 **Step 3.** We select the ad that has the highest ![equation 4](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/6_reinforcement_learning/2_thompson_sampling/equation4.gif)
+
+Go to [Contents](#contents)
+
+## Natural Language Processing
+
+a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/7_natural_language_processing/natural_language_processing.py)
+
+* Importing the dataset ([Restaurant_Reviews.tsv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/7_natural_language_processing/Restaurant_Reviews.tsv))
+* Cleaning the texts
+* Creating the Bag of Words model
+* Splitting the dataset into the Training set and Test set
+* Fitting Naive Bayes to the Training set
+* Predicting the Test set results
+* Making the Confusion Matrix
+* Calculating metrics using the confusion matrix
+
+### Metrics: 
+
+* Classification Rate/Accuracy: 
+
+Classification Rate or Accuracy is given by the relation:
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+However, there are problems with accuracy.  It assumes equal costs for both kinds of errors. A 99% accuracy can be excellent, good, mediocre, poor or terrible depending upon the problem.
+
+* Recall:
+
+Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
+
+Recall is given by the relation:
+
+Recall = TP / (TP + FN)
+
+* Precision:
+
+To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
+
+Precision is given by the relation:
+
+Precision = TP / (TP + FP)
+
+High recall, low precision: 
+This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
+
+Low recall, high precision: 
+This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
+
+* F-measure:
+
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
+
+The F-Measure will always be nearer to the smaller value of Precision or Recall.
+
+Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
 
 Go to [Contents](#contents)
 

@@ -56,6 +56,8 @@ print("\n")
 cm = confusion_matrix(y_test, y_pred)
 print("Confusion Matrix\n", cm)
 
+# Calculating metrics using the confusion matrix
+
 '''
 True Positive (TP) : Observation is positive, and is predicted to be positive.
 False Negative (FN) : Observation is positive, but is predicted negative.
