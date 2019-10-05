@@ -475,29 +475,29 @@ a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/ma
 
 ### Metrics: 
 
-* Classification Rate/Accuracy: 
+#### Classification Rate / Accuracy
 
 Classification Rate or Accuracy is given by the relation:
 
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
+**Accuracy = (TP + TN) / (TP + TN + FP + FN)**
 
 However, there are problems with accuracy.  It assumes equal costs for both kinds of errors. A 99% accuracy can be excellent, good, mediocre, poor or terrible depending upon the problem.
 
-* Recall:
+#### Recall
 
 Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
 
 Recall is given by the relation:
 
-Recall = TP / (TP + FN)
+**Recall = TP / (TP + FN)**
 
-* Precision:
+#### Precision
 
 To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
 
 Precision is given by the relation:
 
-Precision = TP / (TP + FP)
+**Precision = TP / (TP + FP)**
 
 High recall, low precision: 
 This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
@@ -505,13 +505,13 @@ This means that most of the positive examples are correctly recognized (low FN) 
 Low recall, high precision: 
 This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
 
-* F-measure:
+#### F-measure
 
 Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
 
 The F-Measure will always be nearer to the smaller value of Precision or Recall.
 
-Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
+**Fmeasure = (2 * Recall * Precision) / (Recall + Presision)**
 
 Go to [Contents](#contents)
 
