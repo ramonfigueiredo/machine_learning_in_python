@@ -479,7 +479,7 @@ a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/ma
 
 Classification Rate or Accuracy is given by the relation:
 
-**Accuracy = (TP + TN) / (TP + TN + FP + FN)**
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 However, there are problems with accuracy.  It assumes equal costs for both kinds of errors. A 99% accuracy can be excellent, good, mediocre, poor or terrible depending upon the problem.
 
@@ -489,7 +489,7 @@ Recall can be defined as the ratio of the total number of correctly classified p
 
 Recall is given by the relation:
 
-**Recall = TP / (TP + FN)**
+Recall = TP / (TP + FN)
 
 #### Precision
 
@@ -497,7 +497,7 @@ To get the value of precision we divide the total number of correctly classified
 
 Precision is given by the relation:
 
-**Precision = TP / (TP + FP)**
+Precision = TP / (TP + FP)
 
 High recall, low precision: 
 This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
@@ -511,7 +511,34 @@ Since we have two measures (Precision and Recall) it helps to have a measurement
 
 The F-Measure will always be nearer to the smaller value of Precision or Recall.
 
-**Fmeasure = (2 * Recall * Precision) / (Recall + Presision)**
+Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
+
+```
+Predicting the Test set results
+ [1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 1 0 1
+ 0 1 1 1 1 1 0 0 0 1 1 0 0 1 1 1 1 1 0 1 1 0 1 1 0 1 1 1 0 1 1 1 1 1 1 1 1
+ 0 1 1 0 0 1 0 1 1 0 1 1 1 0 1 1 0 1 0 0 1 1 1 1 1 1 0 1 1 1 0 1 1 1 0 0 0
+ 1 0 1 1 0 1 1 1 1 1 0 1 1 0 0 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1 1 0 1 0 1 1
+ 1 1 1 0 1 1 1 0 1 1 1 1 1 0 0 1 0 0 1 0 0 0 0 1 1 0 0 1 0 1 0 0 1 0 0 1 0
+ 1 0 1 0 1 1 0 1 1 1 0 1 1 1 1]
+
+
+Confusion Matrix
+ [[55 42]
+ [12 91]]
+
+
+True Positive (TP): 55
+False Negative (FN): 42
+True Negative (TN): 12
+False Positive (FP): 91
+
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN): 33.50 %
+Recall = TP / (TP + FN): 56.70 %
+Precision = TP / (TP + FP): 37.67 %
+Fmeasure = (2 * recall * precision) / (recall + precision): 45.27 %
+```
 
 Go to [Contents](#contents)
 
