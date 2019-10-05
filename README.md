@@ -475,6 +475,11 @@ a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/ma
 
 ### Metrics: 
 
+* **True Positive (TP):** Observation is positive, and is predicted to be positive.
+* **False Negative (FN):** Observation is positive, but is predicted negative.
+* **True Negative (TN):** Observation is negative, and is predicted to be negative.
+* **False Positive (FP):** Observation is negative, but is predicted positive.
+
 #### Classification Rate / Accuracy
 
 Classification Rate or Accuracy is given by the relation:
