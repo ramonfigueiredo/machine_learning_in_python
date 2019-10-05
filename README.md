@@ -465,7 +465,7 @@ Go to [Contents](#contents)
 a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/7_natural_language_processing/natural_language_processing.py)
 
 * Importing the dataset ([Restaurant_Reviews.tsv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/7_natural_language_processing/Restaurant_Reviews.tsv))
-* Cleaning the texts
+* Cleaning the texts (remove text different of a-z or A-Z removing stop words, suffix stripping using Porter Stemming Algorithm)
 * Creating the Bag of Words model
 * Splitting the dataset into the Training set and Test set
 * Fitting Naive Bayes to the Training set
