@@ -771,7 +771,7 @@ Go to [Contents](#contents)
 
 ### Confusion Matrix
 
-* ![Confusion Matrix 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix.jpg)
+![Confusion Matrix 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix.jpg)
 
 ### True Positive (TP), False Negative (FN), True Negative (TN), False Positive (FP)
 
