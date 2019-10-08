@@ -27,7 +27,11 @@ Machine Learning in Python
 	1. [Upper Confidence Bound](#upper-confidence-bound)
 	2. [Thompson Sampling](#thompson-sampling)
 7. [Natural Language Processing](#natural-language-processing)
-8. [How to run the Python program](#how-to-run-the-python-program)
+8. [Deep Learning](#deep-learning)
+	1. [Artificial Neural Networks](#artificial-neural-networks)
+	2. [Convolutional Neural Networks](#convolutional-neural-networks)
+9. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+10. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
@@ -473,50 +477,7 @@ a.  [natural_language_processing.py](https://github.com/ramonfigueiredopessoa/ma
 * Making the Confusion Matrix
 * Calculating metrics using the confusion matrix
 
-### Metrics: 
-
-* **True Positive (TP):** Observation is positive, and is predicted to be positive.
-* **False Negative (FN):** Observation is positive, but is predicted negative.
-* **True Negative (TN):** Observation is negative, and is predicted to be negative.
-* **False Positive (FP):** Observation is negative, but is predicted positive.
-
-#### Classification Rate / Accuracy
-
-Classification Rate or Accuracy is given by the relation:
-
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
-
-However, there are problems with accuracy.  It assumes equal costs for both kinds of errors. A 99% accuracy can be excellent, good, mediocre, poor or terrible depending upon the problem.
-
-#### Recall
-
-Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
-
-Recall is given by the relation:
-
-Recall = TP / (TP + FN)
-
-#### Precision
-
-To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
-
-Precision is given by the relation:
-
-Precision = TP / (TP + FP)
-
-High recall, low precision: 
-This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
-
-Low recall, high precision: 
-This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
-
-#### F-measure
-
-Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
-
-The F-Measure will always be nearer to the smaller value of Precision or Recall.
-
-Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
+See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
 ### Algorithm output
 
@@ -546,6 +507,316 @@ Recall = TP / (TP + FN): 56.70 %
 Precision = TP / (TP + FP): 37.67 %
 Fmeasure = (2 * recall * precision) / (recall + precision): 45.27 %
 ```
+
+Go to [Contents](#contents)
+
+## Deep Learning
+
+### Artificial Neural Networks
+
+a.  [ann.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/1_artificial_neural_networks/ann.py)
+
+* Importing the dataset ([Churn_Modelling.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/1_artificial_neural_networks/Churn_Modelling.csv))
+* Encoding categorical data
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Creating the Artificial Neural Networks (ANN) using [Keras](https://keras.io/)
+	* Initialising the ANN
+	* Adding the input layer and the first hidden layer
+	* Adding the second hidden layer
+	* Adding the output layer
+	* Compiling the ANN
+	* Fitting the ANN to the Training set
+* Predicting the Test set results
+* Creating the Confusion Matrix
+* Calculating metrics using the confusion matrix
+
+See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+
+### Algorithm output using Keras and TensorFlow (CPU)
+
+```
+Using TensorFlow backend.
+
+Epoch 1/100
+8000/8000 [==============================] - 1s 102us/step - loss: 0.4960 - accuracy: 0.7943
+Epoch 2/100
+8000/8000 [==============================] - 1s 82us/step - loss: 0.4288 - accuracy: 0.7960
+Epoch 3/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4237 - accuracy: 0.7960
+Epoch 4/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4201 - accuracy: 0.8076
+Epoch 5/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4175 - accuracy: 0.8224
+Epoch 6/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4154 - accuracy: 0.8269
+Epoch 7/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4142 - accuracy: 0.8290
+Epoch 8/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4125 - accuracy: 0.8295
+Epoch 9/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4120 - accuracy: 0.8311
+Epoch 10/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4107 - accuracy: 0.8331
+Epoch 11/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4101 - accuracy: 0.8320
+Epoch 12/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4092 - accuracy: 0.8332
+Epoch 13/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4085 - accuracy: 0.8354
+Epoch 14/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4083 - accuracy: 0.8328
+Epoch 15/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4074 - accuracy: 0.8351
+Epoch 16/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4071 - accuracy: 0.8351
+Epoch 17/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4066 - accuracy: 0.8344
+Epoch 18/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4063 - accuracy: 0.8336
+Epoch 19/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4057 - accuracy: 0.8342
+Epoch 20/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4059 - accuracy: 0.8324
+Epoch 21/100
+8000/8000 [==============================] - 1s 80us/step - loss: 0.4048 - accuracy: 0.8353
+Epoch 22/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4051 - accuracy: 0.8342
+Epoch 23/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4052 - accuracy: 0.8344
+Epoch 24/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4045 - accuracy: 0.8354
+Epoch 25/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4041 - accuracy: 0.8354
+Epoch 26/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4044 - accuracy: 0.8342
+Epoch 27/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4044 - accuracy: 0.8351
+Epoch 28/100
+8000/8000 [==============================] - 1s 80us/step - loss: 0.4037 - accuracy: 0.8341
+Epoch 29/100
+8000/8000 [==============================] - 1s 82us/step - loss: 0.4034 - accuracy: 0.8346
+Epoch 30/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4035 - accuracy: 0.8354
+Epoch 31/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4030 - accuracy: 0.8335
+Epoch 32/100
+8000/8000 [==============================] - 1s 80us/step - loss: 0.4033 - accuracy: 0.8342
+Epoch 33/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4031 - accuracy: 0.8344
+Epoch 34/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4034 - accuracy: 0.8341
+Epoch 35/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4030 - accuracy: 0.8346
+Epoch 36/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4025 - accuracy: 0.8346
+Epoch 37/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4028 - accuracy: 0.8334
+Epoch 38/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4026 - accuracy: 0.8350
+Epoch 39/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4028 - accuracy: 0.8338
+Epoch 40/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4025 - accuracy: 0.8350
+Epoch 41/100
+8000/8000 [==============================] - 1s 81us/step - loss: 0.4021 - accuracy: 0.8332
+Epoch 42/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4024 - accuracy: 0.8356
+Epoch 43/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4023 - accuracy: 0.8339
+Epoch 44/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4019 - accuracy: 0.8339
+Epoch 45/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4022 - accuracy: 0.8353
+Epoch 46/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4019 - accuracy: 0.8328
+Epoch 47/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4023 - accuracy: 0.8345
+Epoch 48/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4020 - accuracy: 0.8339
+Epoch 49/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4021 - accuracy: 0.8354
+Epoch 50/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4020 - accuracy: 0.8334
+Epoch 51/100
+8000/8000 [==============================] - 1s 75us/step - loss: 0.4020 - accuracy: 0.8345
+Epoch 52/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4017 - accuracy: 0.8342
+Epoch 53/100
+8000/8000 [==============================] - 1s 75us/step - loss: 0.4021 - accuracy: 0.8340
+Epoch 54/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4018 - accuracy: 0.8353
+Epoch 55/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4016 - accuracy: 0.8339
+Epoch 56/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4017 - accuracy: 0.8345
+Epoch 57/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4020 - accuracy: 0.8338
+Epoch 58/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4018 - accuracy: 0.8335
+Epoch 59/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4018 - accuracy: 0.8353
+Epoch 60/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4018 - accuracy: 0.8336
+Epoch 61/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4017 - accuracy: 0.8339
+Epoch 62/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4017 - accuracy: 0.8341
+Epoch 63/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4018 - accuracy: 0.8340
+Epoch 64/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4018 - accuracy: 0.8339
+Epoch 65/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4016 - accuracy: 0.8355
+Epoch 66/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4020 - accuracy: 0.8341
+Epoch 67/100
+8000/8000 [==============================] - 1s 81us/step - loss: 0.4018 - accuracy: 0.8347
+Epoch 68/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4013 - accuracy: 0.8340
+Epoch 69/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4016 - accuracy: 0.8346
+Epoch 70/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4020 - accuracy: 0.8342
+Epoch 71/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4015 - accuracy: 0.8346
+Epoch 72/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4016 - accuracy: 0.8339
+Epoch 73/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4012 - accuracy: 0.8350
+Epoch 74/100
+8000/8000 [==============================] - 1s 81us/step - loss: 0.4015 - accuracy: 0.8335
+Epoch 75/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4014 - accuracy: 0.8340
+Epoch 76/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4013 - accuracy: 0.8338
+Epoch 77/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4016 - accuracy: 0.8344
+Epoch 78/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4015 - accuracy: 0.8347
+Epoch 79/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4015 - accuracy: 0.8331
+Epoch 80/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4015 - accuracy: 0.8341
+Epoch 81/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4015 - accuracy: 0.8349
+Epoch 82/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4018 - accuracy: 0.8341
+Epoch 83/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4013 - accuracy: 0.8339
+Epoch 84/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4011 - accuracy: 0.8349
+Epoch 85/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4017 - accuracy: 0.8346
+Epoch 86/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4014 - accuracy: 0.8338
+Epoch 87/100
+8000/8000 [==============================] - 1s 78us/step - loss: 0.4016 - accuracy: 0.8349
+Epoch 88/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4014 - accuracy: 0.8353
+Epoch 89/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4013 - accuracy: 0.8329
+Epoch 90/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4016 - accuracy: 0.8339
+Epoch 91/100
+8000/8000 [==============================] - 1s 79us/step - loss: 0.4013 - accuracy: 0.8350
+Epoch 92/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4014 - accuracy: 0.8340
+Epoch 93/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4014 - accuracy: 0.8334
+Epoch 94/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4016 - accuracy: 0.8329
+Epoch 95/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4015 - accuracy: 0.8354
+Epoch 96/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4013 - accuracy: 0.8349
+Epoch 97/100
+8000/8000 [==============================] - 1s 77us/step - loss: 0.4013 - accuracy: 0.8336
+Epoch 98/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4014 - accuracy: 0.8329
+Epoch 99/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4014 - accuracy: 0.8339
+Epoch 100/100
+8000/8000 [==============================] - 1s 76us/step - loss: 0.4011 - accuracy: 0.8345
+
+Predicting the Test set results
+ [0 1 0 ... 0 0 0]
+
+
+Confusion Matrix
+ [[1547   48]
+ [ 266  139]]
+
+
+True Positive (TP): 1547
+False Negative (FN): 48
+True Negative (TN): 266
+False Positive (FP): 139
+
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN): 90.65 %
+Recall = TP / (TP + FN): 96.99 %
+Precision = TP / (TP + FP): 91.76 %
+Fmeasure = (2 * recall * precision) / (recall + precision): 94.30 %
+
+```
+
+Go to [Contents](#contents)
+
+### Convolutional Neural Networks
+
+Go to [Contents](#contents)
+
+## Metrics using the Confusion Matrix 
+
+### Confusion Matrix
+
+* ![Confusion Matrix 1](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix.jpg)
+
+### True Positive (TP), False Negative (FN), True Negative (TN), False Positive (FP)
+
+* **True Positive (TP):** Observation is positive, and is predicted to be positive.
+* **False Negative (FN):** Observation is positive, but is predicted negative.
+* **True Negative (TN):** Observation is negative, and is predicted to be negative.
+* **False Positive (FP):** Observation is negative, but is predicted positive.
+
+### Classification Rate / Accuracy
+
+Classification Rate or Accuracy is given by the relation:
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+However, there are problems with accuracy.  It assumes equal costs for both kinds of errors. A 99% accuracy can be excellent, good, mediocre, poor or terrible depending upon the problem.
+
+### Recall
+
+Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. High Recall indicates the class is correctly recognized (small number of FN).
+
+Recall is given by the relation:
+
+Recall = TP / (TP + FN)
+
+### Precision
+
+To get the value of precision we divide the total number of correctly classified positive examples by the total number of predicted positive examples. High Precision indicates an example labeled as positive is indeed positive (small number of FP).
+
+Precision is given by the relation:
+
+Precision = TP / (TP + FP)
+
+High recall, low precision: 
+This means that most of the positive examples are correctly recognized (low FN) but there are a lot of false positives.
+
+Low recall, high precision: 
+This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
+
+### F-measure
+
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
+
+The F-Measure will always be nearer to the smaller value of Precision or Recall.
+
+Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
 
 Go to [Contents](#contents)
 
