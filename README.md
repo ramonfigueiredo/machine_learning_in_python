@@ -531,6 +531,22 @@ a.  [ann.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 * Creating the Confusion Matrix
 * Calculating metrics using the confusion matrix
 
+#### Training the ANN with Stochastic Gradient Descent
+
+**Step 1.** Randomly initialise the weights to small numbers close to 0 (but not 0).
+
+**Step 2.** Input the first observation of your dataset in the input layer, each feature in one input node.
+
+**Step 3.** Forward-Propagation: from left to right, the neurons are activated in a way that the impact of each neuron's activation is limited by the weights. Propagate the activations until getting the predicted results y.
+
+**Step 4.** Compare the predicted results to the actual result. Measure the generated error.
+
+**Step 5.** Back-Propagation: fron right to left, the error is back-propagated. Update the weights according to how much they are responsible for the error. The learning rate decides by how much we update the weights.
+
+**Step 6.** Repeat Steps 1 to 5 and update the weights after each observation (Reinforcement Learning). Or: Repeat Steps 1 to 5 but update the weights only after a batch of observation (Batch Learning).
+
+**Step 7.** When the whole training set passed through the ANN, that makes an epoch. Redo more epochs.
+
 See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
 ### Algorithm output using Keras and TensorFlow (CPU)
