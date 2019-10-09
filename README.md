@@ -551,9 +551,9 @@ a.  [ann.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 
 See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
-### ANN algorithm output using Keras and TensorFlow (CPU)
+#### ANN algorithm output using Keras and TensorFlow (CPU)
 
-#### Computer settings
+##### Computer settings
 
 * Mac OS Mojave (version 10.14.6)
 * MacBook Pro (15-inch, 2017)
@@ -817,7 +817,7 @@ a.  [cnn.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 
 See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
-### CNN algorithm output using Keras and TensorFlow (CPU)
+#### CNN algorithm output using Keras and TensorFlow (CPU)
 
 * **Note:** 
 	* I executed  this code using tensorflow (CPU). Execute this code using CPU takes lots of time. 
@@ -830,7 +830,7 @@ See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 		* [cuDNN SDK](https://developer.nvidia.com/cudnn) (>= 7.4.1)
 		* (Optional) [TensorRT 5.0](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html) to improve latency and throughput for inference on some models.
 
-#### Computer settings
+##### Computer settings
 
 * Windows 10 Professional (x64)
 * Processor Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
@@ -849,6 +849,10 @@ Go to [Contents](#contents)
 
 ### Principal Component Analysis
 
+The goal of Principal Component Analysis (PCA) is identify patterns in data and detect the correlation between variables.
+
+PCA can be used to reduce the dimensions of a d-dimensional dataset by projecting it onto a (k)-dimensional subspace (where k < d).
+
 a. [pca.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/pca.py)
 
 * Importing the dataset ([Wine.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Wine.csv))
@@ -864,6 +868,20 @@ a. [pca.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Visualising-the-Training-set-results.png)
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Visualising-the-Test-set-results.png)
+
+#### PCA algorithm
+
+Step 1: Standardize the data.
+
+Step 2: Obtain the Eigenvectors and Eigenvalues from the covariance matrix or correlation matrix, or perform Singular Vector Decomposition.
+
+Step 3: Sort eigenvalues in descending order and choose the *k* eigenvectors that correspond to the k largest eigenvalues where k is the number of dimensions of the new feature subspace (*k <= d*).
+
+Step 4: Construct the projection matrix **W** from the selected *k* eigenvalues.
+
+Step 5: Transform the original dataset **X** via **W** to obtain a *k*-dimensional feature subspace **Y**.
+
+[https://plot.ly/ipython-notebooks/principal-component-analysis/](https://plot.ly/ipython-notebooks/principal-component-analysis/)
 
 Go to [Contents](#contents)
 
