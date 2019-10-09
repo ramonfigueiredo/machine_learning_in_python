@@ -69,7 +69,7 @@ a.  [simple_linear_regression.py](https://github.com/ramonfigueiredopessoa/machi
 * Visualising the Training and Test set results
 
 * Visualising the Training set results
-![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Training-set-results.png)
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/2_regression/1_simple_linear_regression/Visualising-the-Test-set-results.png)
 
