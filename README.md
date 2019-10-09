@@ -1085,15 +1085,21 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 ### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 1
 
-**Accuracy (class 1)** = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: 
+**Accuracy (class 1)** = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values
 
 = 14 + (15 + 0 + 0 + 6) / (14 + 0 + 0 + 1 + 15 + 0 + 0 + 0 + 6) = 35/36 = 0.9722222222 (97.22 %)
 
-**Precision (class 1)** = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): 93.33 %
+**Precision (class 1)** = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0])
+
+= 14 / (14 + 1 + 0) = 14/15 = 0.9333333333 (93.33 %)
 
 **Recall (class 1)** = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): 100.00 %
 
-**F1-Score (class 1)** = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): 96.55 %
+= 14 / (14 + 0 + 0) = 14/14 = 1.0 (100 %)
+
+**F1-Score (class 1)** = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1)
+
+= (2 * 1.0 * 0.9333333333) / (1.0 + 0.9333333333) = 1.8666666666/1.9333333333 = 0.9655172414 (96.55 %)
 
 ### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 2
 
