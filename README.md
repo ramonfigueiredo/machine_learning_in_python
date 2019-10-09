@@ -817,12 +817,22 @@ See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
 ### CNN algorithm output using Keras and TensorFlow (CPU)
 
+* **Note:** 
+	* I executed  this code using tensorflow (CPU). Execute this code using CPU takes lots of time. 
+	* If you have GPU you can use tensorflow-gpu. 
+	* The following GPU-enabled devices are supported: NVIDIA(R) GPU card with CUDA(R) Compute Capability 3.5 or higher. See the list of [CUDA-enabled GPU cards](https://developer.nvidia.com/cuda-gpus).
+	* The following NVIDIA(R) software must be installed on your system:
+		* [NVIDIA(R) GPU drivers](https://www.nvidia.com/Download/index.aspx?lang=en-us) — CUDA 10.0 requires 410.x or higher.
+		* [CUDA(R) Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) — TensorFlow supports CUDA 10.0 (TensorFlow >= 1.13.0)
+		* [CUPTI](https://docs.nvidia.com/cuda/cupti/) ships with the CUDA Toolkit.
+		* [cuDNN SDK](https://developer.nvidia.com/cudnn) (>= 7.4.1)
+		* (Optional) [TensorRT 5.0](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html) to improve latency and throughput for inference on some models.
+
 #### Computer settings
 
-* Mac OS Mojave (version 10.14.6)
-* MacBook Pro (15-inch, 2017)
-* Processor 2.8 GHz Intel Core i7
-* Memory 16 GB 2133 MHz LPDDR3
+* Windows 10 Professional (x64)
+* Processor Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+* Memory 32 GB
 
 ```
 Using TensorFlow backend.
