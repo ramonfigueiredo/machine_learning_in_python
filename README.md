@@ -1075,7 +1075,7 @@ Precision = TP / (TP + FP)
 
 F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
-#### Example of metrics calculation using a multi-class confusion matrix
+### Example of metrics calculation using a multi-class confusion matrix
 
 ![Confusion Matrix: Multi-Class Classification](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix-multi-class_classification.png)
 
@@ -1083,7 +1083,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 * True Positive (TP) of class 2: 15
 * True Positive (TP) of class 3: 6
 
-##### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 1
+### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 1
 
 **Accuracy (class 1)** = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: 
 
@@ -1095,7 +1095,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 **F1-Score (class 1)** = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): 96.55 %
 
-##### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 2
+### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 2
 
 **Accuracy (class 2)** = TP (class 2) + cm[0][0] + cm[0][2] + cm[2][0] + cm[2][2] / sum_matrix_values: 97.22 %
 
@@ -1105,7 +1105,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 **F1-Score (class 2)** = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): 96.77 %
 
-##### PRECISION, RECALL, F1-SCORE FOR CLASS 3
+### PRECISION, RECALL, F1-SCORE FOR CLASS 3
 
 **Accuracy (class 3)** = TP (class 3) + cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1] / sum_matrix_values: 100.00 %
 
