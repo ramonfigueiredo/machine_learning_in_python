@@ -63,8 +63,13 @@ l 			-----------------------------
 
 PRECISION, RECALL, F1-SCORE FOR CLASS 1
 
+accuracy_class1 = (TP_class1 + TN_class1) / sum_matrix_values
+    TN_class1 = cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2]
+
 precision_class1 = TP_class1 / (cm[0][0] + cm[1][0] + cm[2][0])
+
 recall_class1 = TP_class1 / (cm[0][0] + cm[0][1] + cm[0][2])
+
 f1_score_class1 = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1)
 
 
@@ -85,8 +90,14 @@ print("True Positive (TP) of class 1:", TP_class1)
 print("True Positive (TP) of class 2:", TP_class2)
 print("True Positive (TP) of class 3:", TP_class3)
 
+sum_matrix_values = cm[0][0] + cm[0][1] + cm[0][2] + cm[1][0] + cm[1][1] + cm[1][2] + cm[2][0] + cm[2][1] + cm[2][2]
 
 print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 1\n")
+
+TN_class1 = cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2]
+accuracy_class1 = (TP_class1 + TN_class1) / sum_matrix_values
+
+print("Accuracy (class 1) = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: %.2f %%" %(accuracy_class1*100) )
 
 precision_class1 = TP_class1 / (cm[0][0] + cm[1][0] + cm[2][0])
 print("Precision (class 1) = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): %.2f %%" %(precision_class1*100) )

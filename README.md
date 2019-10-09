@@ -910,13 +910,13 @@ This means that most of the positive examples are correctly recognized (low FN) 
 Low recall, high precision: 
 This shows that we miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP)
 
-### F-measure
+### F1-Score
 
-Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
+Since we have two measures (Precision and Recall) it helps to have a measurement that represents both of them. We calculate an F1-Score (F-measure) which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.
 
-The F-Measure will always be nearer to the smaller value of Precision or Recall.
+The F1-Score will always be nearer to the smaller value of Precision or Recall.
 
-Fmeasure = (2 * Recall * Precision) / (Recall + Presision)
+F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 Go to [Contents](#contents)
 
