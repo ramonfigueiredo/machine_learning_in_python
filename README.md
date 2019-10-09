@@ -549,7 +549,14 @@ a.  [ann.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 
 See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
-### Algorithm output using Keras and TensorFlow (CPU)
+### ANN algorithm output using Keras and TensorFlow (CPU)
+
+#### Computer settings
+
+* Mac OS Mojave (version 10.14.6)
+* MacBook Pro (15-inch, 2017)
+* Processor 2.8 GHz Intel Core i7
+* Memory 16 GB 2133 MHz LPDDR3
 
 ```
 Using TensorFlow backend.
@@ -808,7 +815,14 @@ a.  [cnn.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python
 
 See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 
-### Algorithm output using Keras and TensorFlow (CPU)
+### CNN algorithm output using Keras and TensorFlow (CPU)
+
+#### Computer settings
+
+* Mac OS Mojave (version 10.14.6)
+* MacBook Pro (15-inch, 2017)
+* Processor 2.8 GHz Intel Core i7
+* Memory 16 GB 2133 MHz LPDDR3
 
 ```
 Using TensorFlow backend.
