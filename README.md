@@ -934,7 +934,7 @@ Recall (class 2) = TP (class 2) / (cm[1][0] + cm[1][1] + cm[1][2]): 93.75 %
 
 F1-Score (class 2) = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): 96.77 %
 
-ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 3
+PRECISION, RECALL, F1-SCORE FOR CLASS 3
 
 Accuracy (class 3) = TP (class 3) + cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1] / sum_matrix_values: 100.00 %
 
