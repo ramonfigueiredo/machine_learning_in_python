@@ -92,7 +92,7 @@ print("True Positive (TP) of class 3:", TP_class3)
 
 sum_matrix_values = cm[0][0] + cm[0][1] + cm[0][2] + cm[1][0] + cm[1][1] + cm[1][2] + cm[2][0] + cm[2][1] + cm[2][2]
 
-print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 1\n")
+print("\nACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 1\n")
 
 TN_class1 = cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2]
 accuracy_class1 = (TP_class1 + TN_class1) / sum_matrix_values
@@ -108,7 +108,7 @@ f1_score_class1 = (2 * recall_class1 * precision_class1) / (recall_class1 + prec
 print("F1-Score (class 1) = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): %.2f %%" %(f1_score_class1*100) )
 
 
-print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 2\n")
+print("\nnACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 2\n")
 
 TN_class2 = cm[0][0] + cm[0][2] + cm[2][0] + cm[2][2]
 accuracy_class2 = (TP_class2 + TN_class2) / sum_matrix_values
@@ -124,7 +124,7 @@ f1_score_class2 = (2 * recall_class2 * precision_class2) / (recall_class2 + prec
 print("F1-Score (class 2) = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): %.2f %%" %(f1_score_class2*100) )
 
 
-print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 3\n")
+print("\nnACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 3\n")
 
 TN_class3 = cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1]
 accuracy_class3 = (TP_class3 + TN_class3) / sum_matrix_values
