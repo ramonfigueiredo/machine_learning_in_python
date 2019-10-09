@@ -883,6 +883,68 @@ Step 5: Transform the original dataset **X** via **W** to obtain a *k*-dimension
 
 [https://plot.ly/ipython-notebooks/principal-component-analysis/](https://plot.ly/ipython-notebooks/principal-component-analysis/)
 
+### PCA algorithm output
+
+See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+
+```
+Predicting the Test set results
+ [1 3 2 1 2 1 1 3 2 2 3 3 1 2 3 2 1 1 2 1 2 1 1 2 2 2 2 2 2 3 1 1 2 1 1 1]
+
+Confusion Matrix
+ [[14  0  0]
+ [ 1 15  0]
+ [ 0  0  6]]
+
+
+Classification report
+               precision    recall  f1-score   support
+
+           1      0.933     1.000     0.966        14
+           2      1.000     0.938     0.968        16
+           3      1.000     1.000     1.000         6
+
+    accuracy                          0.972        36
+   macro avg      0.978     0.979     0.978        36
+weighted avg      0.974     0.972     0.972        36
+
+
+
+True Positive (TP) of class 1: 14
+True Positive (TP) of class 2: 15
+True Positive (TP) of class 3: 6
+
+PRECISION, RECALL, F1-SCORE FOR CLASS 1
+
+Accuracy (class 1) = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: 97.22 %
+
+Precision (class 1) = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): 93.33 %
+
+Recall (class 1) = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): 100.00 %
+
+F1-Score (class 1) = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): 96.55 %
+
+PRECISION, RECALL, F1-SCORE FOR CLASS 2
+
+Accuracy (class 2) = TP (class 2) + cm[0][0] + cm[0][2] + cm[2][0] + cm[2][2] / sum_matrix_values: 97.22 %
+
+Precision (class 2) = TP (class 2) / (cm[0][1] + cm[1][1] + cm[2][1]): 100.00 %
+
+Recall (class 2) = TP (class 2) / (cm[1][0] + cm[1][1] + cm[1][2]): 93.75 %
+
+F1-Score (class 2) = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): 96.77 %
+
+PRECISION, RECALL, F1-SCORE FOR CLASS 3
+
+Accuracy (class 3) = TP (class 3) + cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1] / sum_matrix_values: 100.00 %
+
+Precision (class 3) = TP (class 3) / (cm[0][2] + cm[1][2] + cm[2][2]): 100.00 %
+
+Recall (class 3) = TP (class 3) / (cm[2][0] + cm[2][1] + cm[2][2]): 100.00 %
+
+F1-Score (class 3) = (2 * recall_class3 * precision_class3) / (recall_class3 + precision_class3): 100.00 %
+```
+
 Go to [Contents](#contents)
 
 ## Metrics using the Confusion Matrix 
