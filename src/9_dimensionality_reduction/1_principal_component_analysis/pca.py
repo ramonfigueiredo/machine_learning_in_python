@@ -36,10 +36,90 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 print("Predicting the Test set results\n", y_pred)
 
-# Making the Confusion Matrix
+# Creating the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 print("Confusion Matrix\n", cm)
+
+'''
+Confusion Matrix (cm)
+ [[14  0  0]
+ [ 1 15  0]
+ [ 0  0  6]]
+
+ c[0][0] c[0][1] c[0][2]
+ c[1][0] c[1][1] c[1][2]
+ c[2][0] c[2][1] c[2][2]
+
+					   Predicted
+			==============================
+			|	Class1 	Class2 	Class3 	 |
+A 			|----------------------------|
+c 			|							 |
+t 	Class1 	|	 14		  0		  0		 |
+u 	Class2 	|	 1		  15	  0		 |
+a 	Class3 	|	 0		  0		  6      |
+l 			-----------------------------
+
+PRECISION, RECALL, F1-SCORE FOR CLASS 1
+
+precision_class1 = TP_class1 / (cm[0][0] + cm[1][0] + cm[2][0])
+recall_class1 = TP_class1 / (cm[0][0] + cm[0][1] + cm[0][2])
+f1_score_class1 = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1)
+
+
+'''
+
+# Showing classification report (Precision, Recall, F1-Score)
+from sklearn.metrics import classification_report
+print("Classification report\n", classification_report(y_test, y_pred, digits=3))
+
+# Calculating metrics using the confusion matrix
+
+print("\n")
+
+TP_class1 = cm[0][0]
+TP_class2 = cm[1][1]
+TP_class3 = cm[2][2]
+print("True Positive (TP) of class 1:", TP_class1)
+print("True Positive (TP) of class 2:", TP_class2)
+print("True Positive (TP) of class 3:", TP_class3)
+
+
+print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 1\n")
+
+precision_class1 = TP_class1 / (cm[0][0] + cm[1][0] + cm[2][0])
+print("Precision (class 1) = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): %.2f %%" %(precision_class1*100) )
+
+recall_class1 = TP_class1 / (cm[0][0] + cm[0][1] + cm[0][2])
+print("Recall (class 1) = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): %.2f %%" %(recall_class1*100) )
+
+f1_score_class1 = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1)
+print("F1-Score (class 1) = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): %.2f %%" %(f1_score_class1*100) )
+
+
+print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 2\n")
+
+precision_class2 = TP_class2 / (cm[0][1] + cm[1][1] + cm[2][1])
+print("Precision (class 2) = TP (class 2) / (cm[0][1] + cm[1][1] + cm[2][1]): %.2f %%" %(precision_class2*100) )
+
+recall_class2 = TP_class2 / (cm[1][0] + cm[1][1] + cm[1][2])
+print("Recall (class 2) = TP (class 2) / (cm[1][0] + cm[1][1] + cm[1][2]): %.2f %%" %(recall_class2*100) )
+
+f1_score_class2 = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2)
+print("F1-Score (class 2) = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): %.2f %%" %(f1_score_class2*100) )
+
+
+print("\nPRECISION, RECALL, F1-SCORE FOR CLASS 3\n")
+
+precision_class3 = TP_class3 / (cm[0][2] + cm[1][2] + cm[2][2])
+print("Precision (class 3) = TP (class 3) / (cm[0][2] + cm[1][2] + cm[2][2]): %.2f %%" %(precision_class3*100) )
+
+recall_class3 = TP_class3 / (cm[2][0] + cm[2][1] + cm[2][2])
+print("Recall (class 3) = TP (class 3) / (cm[2][0] + cm[2][1] + cm[2][2]): %.2f %%" %(recall_class3*100) )
+
+f1_score_class3 = (2 * recall_class3 * precision_class3) / (recall_class3 + precision_class3)
+print("F1-Score (class 3) = (2 * recall_class3 * precision_class3) / (recall_class3 + precision_class3): %.2f %%" %(f1_score_class3*100) )
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
