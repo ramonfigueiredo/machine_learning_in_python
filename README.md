@@ -30,8 +30,10 @@ Machine Learning in Python
 8. [Deep Learning](#deep-learning)
 	1. [Artificial Neural Networks](#artificial-neural-networks)
 	2. [Convolutional Neural Networks](#convolutional-neural-networks)
-9. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
-10. [How to run the Python program](#how-to-run-the-python-program)
+9. [Dimensionality Reduction](#dimensionality-reduction)
+	1. [Principal Component Analysis](#principal-component-analysis)
+10. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+11. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
@@ -840,6 +842,28 @@ Using TensorFlow backend.
 Epoch 1/25
 8000/8000 [==============================] - 1187s 148ms/step - loss: 0.3519 - accuracy: 0.8334 - val_loss: 0.5071 - val_accuracy: 0.7934
 ```
+
+Go to [Contents](#contents)
+
+## Dimensionality Reduction
+
+### Principal Component Analysis
+
+a. [pca.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/pca.py)
+
+* Importing the dataset ([Wine.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Wine.csv))
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Applying Principal Component Analysis (PCA)
+* Fitting Logistic Regression to the Training set
+* Predicting the Test set results
+* Creating the Confusion Matrix
+* Visualising the Training and Test set results
+
+* Visualising the Training set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Visualising-the-Training-set-results.png)
+* Visualising the Test set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Visualising-the-Test-set-results.png)
 
 Go to [Contents](#contents)
 
