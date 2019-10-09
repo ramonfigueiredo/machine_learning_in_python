@@ -1085,35 +1085,35 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 ##### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 1
 
-Accuracy (class 1) = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: 
+**Accuracy (class 1)** = TP (class 1) + cm[1][1] + cm[1][2] + cm[2][1] + cm[2][2] / sum_matrix_values: 
 
 = 14 + (15 + 0 + 0 + 6) / (14 + 0 + 0 + 1 + 15 + 0 + 0 + 0 + 6) = 35/36 = 0.9722222222 (97.22 %)
 
-Precision (class 1) = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): 93.33 %
+**Precision (class 1)** = TP (class 1) / (cm[0][0] + cm[1][0] + cm[2][0]): 93.33 %
 
-Recall (class 1) = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): 100.00 %
+**Recall (class 1)** = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): 100.00 %
 
-F1-Score (class 1) = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): 96.55 %
+**F1-Score (class 1)** = (2 * recall_class1 * precision_class1) / (recall_class1 + precision_class1): 96.55 %
 
 ##### ACCURACY, PRECISION, RECALL, F1-SCORE FOR CLASS 2
 
-Accuracy (class 2) = TP (class 2) + cm[0][0] + cm[0][2] + cm[2][0] + cm[2][2] / sum_matrix_values: 97.22 %
+**Accuracy (class 2)** = TP (class 2) + cm[0][0] + cm[0][2] + cm[2][0] + cm[2][2] / sum_matrix_values: 97.22 %
 
-Precision (class 2) = TP (class 2) / (cm[0][1] + cm[1][1] + cm[2][1]): 100.00 %
+**Precision (class 2)** = TP (class 2) / (cm[0][1] + cm[1][1] + cm[2][1]): 100.00 %
 
-Recall (class 2) = TP (class 2) / (cm[1][0] + cm[1][1] + cm[1][2]): 93.75 %
+**Recall (class 2)** = TP (class 2) / (cm[1][0] + cm[1][1] + cm[1][2]): 93.75 %
 
-F1-Score (class 2) = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): 96.77 %
+**F1-Score (class 2)** = (2 * recall_class2 * precision_class2) / (recall_class2 + precision_class2): 96.77 %
 
 ##### PRECISION, RECALL, F1-SCORE FOR CLASS 3
 
-Accuracy (class 3) = TP (class 3) + cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1] / sum_matrix_values: 100.00 %
+**Accuracy (class 3)** = TP (class 3) + cm[0][0] + cm[0][1] + cm[1][0] + cm[1][1] / sum_matrix_values: 100.00 %
 
-Precision (class 3) = TP (class 3) / (cm[0][2] + cm[1][2] + cm[2][2]): 100.00 %
+**Precision (class 3)** = TP (class 3) / (cm[0][2] + cm[1][2] + cm[2][2]): 100.00 %
 
-Recall (class 3) = TP (class 3) / (cm[2][0] + cm[2][1] + cm[2][2]): 100.00 %
+**Recall (class 3)** = TP (class 3) / (cm[2][0] + cm[2][1] + cm[2][2]): 100.00 %
 
-F1-Score (class 3) = (2 * recall_class3 * precision_class3) / (recall_class3 + precision_class3): 100.00 %
+**F1-Score (class 3)** = (2 * recall_class3 * precision_class3) / (recall_class3 + precision_class3): 100.00 %
 
 Go to [Contents](#contents)
 
