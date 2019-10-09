@@ -1093,7 +1093,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 = 14 / (14 + 1 + 0) = 14/15 = 0.9333333333 (93.33 %)
 
-**Recall (class 1)** = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2]): 100.00 %
+**Recall (class 1)** = TP (class 1) / (cm[0][0] + cm[0][1] + cm[0][2])
 
 = 14 / (14 + 0 + 0) = 14/14 = 1.0 (100 %)
 
