@@ -781,6 +781,42 @@ Go to [Contents](#contents)
 
 ### Convolutional Neural Networks
 
+a.  [cnn.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/2_convolutional_neural_networks/cnn.py)
+
+* Using a dataset with 10000 images of cats and dogs ([cats and dogs dataset](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/2_convolutional_neural_networks/dataset))
+	* Training set: 8000 (4000 cat images + 4000 dogs images)
+	* Test set: 2000 (1000 cat images + 1000 dogs images)
+* Creating the Convolutional Neural Network using [Keras](https://keras.io/)
+	* Initialising the CNN
+	* Convolution
+	* Pooling
+	* Adding a second convolutional layer
+	* Flattening
+	* Full connection
+	* Compiling the CNN
+	* Fitting the CNN to the images
+
+#### Training the CNN
+
+**Step 1.** Convolution
+
+**Step 2.** Max Pooling
+
+**Step 3.** Flattening
+
+**Step 4.** Full connection
+
+See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+
+### Algorithm output using Keras and TensorFlow (CPU)
+
+```
+Using TensorFlow backend.
+
+Epoch 1/25
+8000/8000 [==============================] - 1187s 148ms/step - loss: 0.3519 - accuracy: 0.8334 - val_loss: 0.5071 - val_accuracy: 0.7934
+```
+
 Go to [Contents](#contents)
 
 ## Metrics using the Confusion Matrix 

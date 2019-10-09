@@ -1,10 +1,5 @@
 # Convolutional Neural Network
 
-# Installing Keras
-# Enter the following command in a terminal (or anaconda prompt for Windows users): conda install -c conda-forge keras
-
-# Part 1 - Building the CNN
-
 # Importing the Keras libraries and packages
 from keras.models import Sequential
 from keras.layers import Conv2D
@@ -15,27 +10,27 @@ from keras.layers import Dense
 # Initialising the CNN
 classifier = Sequential()
 
-# Step 1 - Convolution
+# Convolution
 classifier.add(Conv2D(32, (3, 3), input_shape = (64, 64, 3), activation = 'relu'))
 
-# Step 2 - Pooling
+# Pooling
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
 
 # Adding a second convolutional layer
 classifier.add(Conv2D(32, (3, 3), activation = 'relu'))
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
 
-# Step 3 - Flattening
+# Flattening
 classifier.add(Flatten())
 
-# Step 4 - Full connection
+# Full connection
 classifier.add(Dense(units = 128, activation = 'relu'))
 classifier.add(Dense(units = 1, activation = 'sigmoid'))
 
 # Compiling the CNN
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
-# Part 2 - Fitting the CNN to the images
+# Fitting the CNN to the images
 
 from keras.preprocessing.image import ImageDataGenerator
 
