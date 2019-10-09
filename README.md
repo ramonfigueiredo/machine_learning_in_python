@@ -839,8 +839,58 @@ See [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 ```
 Using TensorFlow backend.
 
+Found 8000 images belonging to 2 classes.
+Found 2000 images belonging to 2 classes.
 Epoch 1/25
-8000/8000 [==============================] - 1187s 148ms/step - loss: 0.3519 - accuracy: 0.8334 - val_loss: 0.5071 - val_accuracy: 0.7934
+8000/8000 [==============================] - 887s 111ms/step - loss: 0.3579 - accuracy: 0.8324 - val_loss: 0.5902 - val_accuracy: 0.8086
+Epoch 2/25
+8000/8000 [==============================] - 759s 95ms/step - loss: 0.1079 - accuracy: 0.9588 - val_loss: 0.5788 - val_accuracy: 0.8000
+Epoch 3/25
+8000/8000 [==============================] - 716s 90ms/step - loss: 0.0539 - accuracy: 0.9813 - val_loss: 0.6424 - val_accuracy: 0.7990
+Epoch 4/25
+8000/8000 [==============================] - 717s 90ms/step - loss: 0.0386 - accuracy: 0.9867 - val_loss: 0.9461 - val_accuracy: 0.8047
+Epoch 5/25
+8000/8000 [==============================] - 713s 89ms/step - loss: 0.0308 - accuracy: 0.9896 - val_loss: 1.3553 - val_accuracy: 0.7848
+Epoch 6/25
+8000/8000 [==============================] - 713s 89ms/step - loss: 0.0259 - accuracy: 0.9913 - val_loss: 1.3581 - val_accuracy: 0.7889
+Epoch 7/25
+8000/8000 [==============================] - 714s 89ms/step - loss: 0.0224 - accuracy: 0.9927 - val_loss: 0.9129 - val_accuracy: 0.8069
+Epoch 8/25
+8000/8000 [==============================] - 726s 91ms/step - loss: 0.0189 - accuracy: 0.9939 - val_loss: 1.2980 - val_accuracy: 0.7935
+Epoch 9/25
+8000/8000 [==============================] - 736s 92ms/step - loss: 0.0178 - accuracy: 0.9943 - val_loss: 1.9009 - val_accuracy: 0.7885
+Epoch 10/25
+8000/8000 [==============================] - 716s 90ms/step - loss: 0.0163 - accuracy: 0.9949 - val_loss: 1.4097 - val_accuracy: 0.7889
+Epoch 11/25
+8000/8000 [==============================] - 713s 89ms/step - loss: 0.0138 - accuracy: 0.9957 - val_loss: 0.7039 - val_accuracy: 0.7976
+Epoch 12/25
+8000/8000 [==============================] - 716s 89ms/step - loss: 0.0130 - accuracy: 0.9959 - val_loss: 1.4262 - val_accuracy: 0.7914
+Epoch 13/25
+8000/8000 [==============================] - 712s 89ms/step - loss: 0.0123 - accuracy: 0.9963 - val_loss: 0.7608 - val_accuracy: 0.7976
+Epoch 14/25
+8000/8000 [==============================] - 714s 89ms/step - loss: 0.0122 - accuracy: 0.9963 - val_loss: 2.7076 - val_accuracy: 0.8005
+Epoch 15/25
+8000/8000 [==============================] - 715s 89ms/step - loss: 0.0108 - accuracy: 0.9967 - val_loss: 3.5931 - val_accuracy: 0.7930
+Epoch 16/25
+8000/8000 [==============================] - 713s 89ms/step - loss: 0.0104 - accuracy: 0.9969 - val_loss: 0.6374 - val_accuracy: 0.7970
+Epoch 17/25
+8000/8000 [==============================] - 712s 89ms/step - loss: 0.0100 - accuracy: 0.9969 - val_loss: 1.3442 - val_accuracy: 0.8016
+Epoch 18/25
+8000/8000 [==============================] - 712s 89ms/step - loss: 0.0091 - accuracy: 0.9973 - val_loss: 2.7414 - val_accuracy: 0.8020
+Epoch 19/25
+8000/8000 [==============================] - 714s 89ms/step - loss: 0.0091 - accuracy: 0.9973 - val_loss: 1.3481 - val_accuracy: 0.7944
+Epoch 20/25
+8000/8000 [==============================] - 712s 89ms/step - loss: 0.0089 - accuracy: 0.9974 - val_loss: 4.1220 - val_accuracy: 0.7976
+Epoch 21/25
+8000/8000 [==============================] - 714s 89ms/step - loss: 0.0086 - accuracy: 0.9975 - val_loss: 0.8613 - val_accuracy: 0.7923
+Epoch 22/25
+8000/8000 [==============================] - 716s 90ms/step - loss: 0.0088 - accuracy: 0.9976 - val_loss: 3.9867 - val_accuracy: 0.7960
+Epoch 23/25
+8000/8000 [==============================] - 731s 91ms/step - loss: 0.0076 - accuracy: 0.9977 - val_loss: 1.3609 - val_accuracy: 0.7892
+Epoch 24/25
+8000/8000 [==============================] - 749s 94ms/step - loss: 0.0074 - accuracy: 0.9978 - val_loss: 2.1906 - val_accuracy: 0.7942
+Epoch 25/25
+8000/8000 [==============================] - 718s 90ms/step - loss: 0.0067 - accuracy: 0.9979 - val_loss: 1.2555 - val_accuracy: 0.8042
 ```
 
 Go to [Contents](#contents)
