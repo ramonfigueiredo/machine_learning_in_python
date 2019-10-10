@@ -1116,12 +1116,15 @@ a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine
 #### K-Fold Cross Validation steps
 
 Step 1: Shuffle the dataset randomly.
+
 Step 2: Split the dataset into k groups
+
 Step 3: For each unique group:
 * Take the group as a hold out or test data set
 * Take the remaining groups as a training data set
 * Fit a model on the training set and evaluate it on the test set
 * Retain the evaluation score and discard the model
+
 Step 4: Summarize the skill of the model using the sample of model evaluation scores
 
 ![K-Fold Cross Validation](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k-fold_cross_validation.png)
