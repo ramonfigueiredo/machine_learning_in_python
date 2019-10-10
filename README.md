@@ -913,6 +913,7 @@ a. [pca.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/
 * Predicting the Test set results
 * Creating the Confusion Matrix
 * Visualising the Training and Test set results
+* Calculating metrics using the confusion matrix
 
 * Visualising the Training set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/1_principal_component_analysis/Visualising-the-Training-set-results.png)
