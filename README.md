@@ -1093,7 +1093,11 @@ Every time we build a machine learning, we have two types of parameters: The fir
 
 So far, to evaluate the machine learning models we train the model in the training set and test its performance on the test set. That's a correct way of evaluating the model performance but is not the best one because we have a variance problem. The variance problem can be explained by the fact that when we get the accuracy on the test set, its performance can change on another test set. Judging our model performance only on one accuracy on one test set is not the most relevant way to evaluate the model.
 
-Therefore, the best approach is to use the K-fold cross validation to fix the variance problem.
+Therefore, the best approach is to use the K-fold cross validation to fix the variance problem. It will fix this problem by splitting the dataset into 10 folds (most of the time k = 10) and we train our model on the last remaining folds. If the 10 folds we can make 10 different combinations of nine folds to train and 1 fold to test, that's means we can have 10 combinations of training sets and test sets. This will give a better idea of how the model performs because we can have an average of different accuracies up to ten evaluations and also compute the standard deviation to have a look in the variance. 
+
+So eventually our analysis will be much more relevant and besides, we will know in which of the following bias-variance our dataset will be.
+
+![Bias-variance tradeoff](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/bias-variance_tradeoff.png)
 
 a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k_fold_cross_validation.py)
 
@@ -1128,8 +1132,6 @@ Step 3: For each unique group:
 Step 4: Summarize the skill of the model using the sample of model evaluation scores
 
 ![K-Fold Cross Validation](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k-fold_cross_validation.png)
-
-![Bias-variance tradeoff](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/bias-variance_tradeoff.png)
 
 Go to [Contents](#contents)
 
