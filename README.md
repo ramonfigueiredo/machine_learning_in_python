@@ -1050,6 +1050,8 @@ LDA: [https://plot.ly/ipython-notebooks/principal-component-analysis/](https://s
 
 ![PCA and LDA](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/2_linear_discriminant_analysis/pca_lda.png)
 
+Go to [Contents](#contents)
+
 ### Kernel PCA
 
 Kernel PCA is a feature extraction technique adapted for non-linear problems where the data is not linearly separable.
@@ -1079,6 +1081,8 @@ The Gaussian RBF kernel is the must commonly used in Kernal PCA.
 
 ![Kernel PCA](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/3_kernel_pca/kernel_pca.png)
 
+Go to [Contents](#contents)
+
 ## Model Selection
 
 ### K-Fold Cross Validation
@@ -1100,6 +1104,8 @@ a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Training-set-results.png)
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Test-set-results.png)
+
+Go to [Contents](#contents)
 
 ### Grid Search
 
@@ -1123,6 +1129,8 @@ a. [grid_search.py](https://github.com/ramonfigueiredopessoa/machine_learning_in
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search-Visualising-the-Test-set-results.png)
 
+Go to [Contents](#contents)
+
 ## Boosting
 
 ### XG Boost
@@ -1139,6 +1147,8 @@ a. [xg_boost.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_py
 * Accuracy in each of the 10 folds
 * Average accuracy after 10-Fold Cross Validation
 * Average standard deviation after 10-Fold Cross Validation
+
+Go to [Contents](#contents)
 
 ## Metrics using the Confusion Matrix 
 
