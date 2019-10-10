@@ -1043,7 +1043,7 @@ Step 5: Use this *d x k* eigenvector matrix to transform the samples onto the ne
 
 LDA: [https://plot.ly/ipython-notebooks/principal-component-analysis/](https://sebastianraschka.com/Articles/2014_python_lda.html)
 
-![PCA and LDA](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/2_linear_discriminant_analysis/pca_lda.png)
+![PCA and LDA](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/2_linear_discriminant_analysis/pca_lda.PNG)
 
 ### Kernel PCA
 
