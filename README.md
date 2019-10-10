@@ -1137,15 +1137,17 @@ Go to [Contents](#contents)
 
 ### Grid Search
 
-The traditional way of performing hyperparameter optimization is use grid search, or a parameter sweep, which is simply an exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm. A grid search algorithm must be guided by some performance metric, typically measured by cross-validation on the training set or evaluation on a held-out validation set.
+The traditional way of performing hyperparameter optimization is to use grid search, or a parameter sweep, which is simply an exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm. A grid search algorithm must be guided by some performance metric, typically measured by cross-validation on the training set or evaluation on a held-out validation set.
 
-Since the parameter space of a machine learner may include real-valued or unbounded value spaces for certain parameters, manually set bounds and discretization may be necessary before applying grid search.
+Since the parameter space of a machine learning algorithm may include real-valued or unbounded value spaces for certain parameters, manually set bounds, and discretization may be necessary before applying a grid search.
 
 For example, a typical soft-margin SVM classifier equipped with an RBF kernel has at least two hyperparameters that need to be tuned for good performance on unseen data: a regularization constant C and a kernel hyperparameter K. Both parameters are continuous, so to perform grid search, one selects a finite set of "reasonable" values for each.
 
 Grid search then trains an SVM with each pair (C, K) in the Cartesian product of these two sets and evaluates their performance on a held-out validation set (or by internal cross-validation on the training set, in which case multiple SVMs are trained per pair). Finally, the grid search algorithm outputs the settings that achieved the highest score in the validation procedure.
 
-Grid search suffers from the curse of dimensionality, but is often embarrassingly parallel because the hyperparameter settings it evaluates are typically independent of each other.
+Grid search suffers from the curse of dimensionality but is often embarrassingly parallel because the hyperparameter settings it evaluates are typically independent of each other.
+
+In summary, Grid Search is used to know which parameter to select when you choose a machine learning model and what is the optimal value of these hyperparameters.
 
 a. [grid_search.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search.py)
 
