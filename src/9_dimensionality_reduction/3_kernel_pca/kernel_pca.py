@@ -36,7 +36,7 @@ y_pred = classifier.predict(X_test)
 
 print("Predicting the Test set results\n", y_pred)
 
-# Making the Confusion Matrix
+# Creating the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
