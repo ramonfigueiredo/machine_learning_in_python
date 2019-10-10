@@ -34,10 +34,10 @@ Machine Learning in Python
 	1. [Principal Component Analysis](#principal-component-analysis)
 	2. [Linear Discriminant Analysis](#linear-discriminant-analysis)
 	3. [Kernel PCA](#kernel-pca)
-10. [Model Selection]
+10. [Model Selection](#model-selection)
 	1. [K-Fold Cross Validation](#k-fold-cross-validation)
 	2. [Grid Search](#grid-search)
-11. [Boosting]
+11. [Boosting](#boosting)
 	1. [XG Boost](#xg-boost)
 12. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
 13. [How to run the Python program](#how-to-run-the-python-program)
