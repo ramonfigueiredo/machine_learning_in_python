@@ -1085,7 +1085,15 @@ Go to [Contents](#contents)
 
 ## Model Selection
 
+Model selection is the process of choosing between different machine learning approaches - e.g. SVM, logistic regression, etc - or choosing between different hyperparameters or sets of features for the same machine learning approach - e.g. deciding between the polynomial degrees/complexities for linear regression.
+
+Every time we build a machine learning, we have two types of parameters: The first type is the parameters that the model learns (parameters that will change and find the optimal values by running the model) and the second type of parameters are the parameters that we choose ourselves. For example, the kernel parameter in the kernel as we model and these parameters are called the hyperparameters. So there are still places to improve the model because we can still choose optimal values for these parameters. And we can find these parameters using the Grid Search technique.
+
 ### K-Fold Cross Validation
+
+So far, to evaluate the machine learning models we train the model in the training set and test its performance on the test set. That's a correct way of evaluating the model performance but is not the best one because we have a variance problem. The variance problem can be explained by the fact that when we get the accuracy on the test set, its performance can change on another test set. Judging our model performance only on one accuracy on one test set is not the most relevant way to evaluate the model.
+
+Therefore, the best approach is to use the K-fold cross validation to fix the variance problem.
 
 a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k_fold_cross_validation.py)
 
@@ -1104,6 +1112,21 @@ a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Training-set-results.png)
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Test-set-results.png)
+
+#### K-Fold Cross Validation steps
+
+Step 1: Shuffle the dataset randomly.
+Step 2: Split the dataset into k groups
+Step 3: For each unique group:
+* Take the group as a hold out or test data set
+* Take the remaining groups as a training data set
+* Fit a model on the training set and evaluate it on the test set
+* Retain the evaluation score and discard the model
+Step 4: Summarize the skill of the model using the sample of model evaluation scores
+
+![K-Fold Cross Validation](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k-fold_cross_validation.png)
+
+![Bias-variance tradeoff](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/bias-variance_tradeoff.png)
 
 Go to [Contents](#contents)
 
