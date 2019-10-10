@@ -1152,7 +1152,7 @@ Go to [Contents](#contents)
 
 ## Metrics using the Confusion Matrix 
 
-### **Confusion Matrix (Binary Classification)**
+### Confusion Matrix (Binary Classification)
 
 ![Confusion Matrix: Binary Classification](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix-binary_classification.png)
 
@@ -1201,7 +1201,7 @@ The F1-Score will always be nearer to the smaller value of Precision or Recall.
 
 F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
-### **Confusion Matrix (Multi-Class Classification)**
+### Confusion Matrix (Multi-Class Classification)
 
 ![Confusion Matrix: Multi-Class Classification - TP, TN, FP, FN](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/confusion_matrix-multi-class_classification-TP_TN_FP_FN.jpg)
 
