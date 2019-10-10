@@ -34,8 +34,13 @@ Machine Learning in Python
 	1. [Principal Component Analysis](#principal-component-analysis)
 	2. [Linear Discriminant Analysis](#linear-discriminant-analysis)
 	3. [Kernel PCA](#kernel-pca)
-10. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
-11. [How to run the Python program](#how-to-run-the-python-program)
+10. [Model Selection]
+	1. [K-Fold Cross Validation](#k-fold-cross-validation)
+	2. [Grid Search](#grid-search)
+11. [Boosting]
+	1. [XG Boost](#xg-boost)
+12. [Metrics using the Confusion Matrix](#metrics-using-the-confusion-matrix)
+13. [How to run the Python program](#how-to-run-the-python-program)
 
 ## Data Preprocessing
 
@@ -1073,6 +1078,67 @@ The Gaussian RBF kernel is the must commonly used in Kernal PCA.
 ![Gaussian RBF kernel](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/3_kernel_pca/gaussian_rbf_kernel.png)
 
 ![Kernel PCA](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/9_dimensionality_reduction/3_kernel_pca/kernel_pca.png)
+
+## Model Selection
+
+### K-Fold Cross Validation
+
+a. [k_fold_cross_validation.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k_fold_cross_validation.py)
+
+* Importing the dataset ([Social_Network_Ads.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/Social_Network_Ads.csv))
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Fitting Kernel SVM to the Training set
+* Predicting the Test set results
+* Creating the Confusion Matrix
+* Applying k-Fold Cross Validation (K = 10)
+* Accuracy in each of the 10 folds
+* Average accuracy after 10-Fold Cross Validation
+* Average standard deviation after 10-Fold Cross Validation
+
+* Visualising the Training set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Training-set-results.png)
+* Visualising the Test set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/10_fold_cross_validation-Visualising-the-Test-set-results.png)
+
+### Grid Search
+
+a. [grid_search.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search.py)
+
+* Importing the dataset ([Social_Network_Ads.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/Social_Network_Ads.csv))
+* Splitting the dataset into the Training set and Test set
+* Feature Scaling
+* Fitting Kernel SVM to the Training set
+* Predicting the Test set results
+* Creating the Confusion Matrix
+* Applying k-Fold Cross Validation (K = 10)
+* Accuracy in each of the 10 folds
+* Average accuracy after 10-Fold Cross Validation
+* Average standard deviation after 10-Fold Cross Validation
+* Grid Search: Best accuracy
+* Grid Search: Best parameters
+
+* Visualising the Training set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search-Visualising-the-Training-set-results.png)
+* Visualising the Test set results
+![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search-Visualising-the-Test-set-results.png)
+
+## Boosting
+
+### XG Boost
+
+a. [xg_boost.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/2_xg_boost/xg_boost.py)
+
+* Importing the dataset ([Churn_Modelling.csv](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/2_xg_boost/Churn_Modelling.csv))
+* Encoding categorical data
+* Splitting the dataset into the Training set and Test set
+* Fitting XGBoost to the Training set
+* Predicting the Test set results
+* Creating the Confusion Matrix
+* Applying k-Fold Cross Validation (K = 10)
+* Accuracy in each of the 10 folds
+* Average accuracy after 10-Fold Cross Validation
+* Average standard deviation after 10-Fold Cross Validation
 
 ## Metrics using the Confusion Matrix 
 

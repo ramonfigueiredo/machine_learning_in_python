@@ -27,16 +27,19 @@ classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
+print("Predicting the Test set results\n", y_pred)
 
-# Making the Confusion Matrix
+# Creating the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+print("Confusion Matrix\n", cm)
 
 # Applying k-Fold Cross Validation
 from sklearn.model_selection import cross_val_score
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
-accuracies.mean()
-accuracies.std()
+print("Accuracy in each of the 10 folds\n", accuracies)
+print("Average accuracy after 10-Fold Cross Validation\n", accuracies.mean())
+print("Average standard deviation after 10-Fold Cross Validation\n", accuracies.std())
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
