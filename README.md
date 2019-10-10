@@ -1133,6 +1133,34 @@ Step 4: Summarize the skill of the model using the sample of model evaluation sc
 
 ![K-Fold Cross Validation](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/k-fold_cross_validation.png)
 
+#### Algorithm output
+
+```
+Predicting the Test set results
+
+ [0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0
+ 0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+ 0 0 0 0 1 1 1 1 0 0 1 0 0 1 1 0 0 1 0 0 0 0 0 1 1 1]
+
+
+Confusion Matrix
+ [[64  4]
+ [ 3 29]]
+
+
+Accuracy in each of the 10 folds
+ [0.80645161 0.96666667 0.8        0.93333333 0.86666667 0.83333333
+ 0.93333333 0.93333333 0.96666667 0.96551724]
+
+
+Average accuracy after 10-Fold Cross Validation
+ 0.9005302187615868
+
+
+Average standard deviation after 10-Fold Cross Validation
+ 0.06388957356626285
+```
+
 Go to [Contents](#contents)
 
 ### Grid Search
@@ -1171,6 +1199,42 @@ a. [grid_search.py](https://github.com/ramonfigueiredopessoa/machine_learning_in
 * Visualising the Test set results
 ![Visualising the Training set results](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search-Visualising-the-Test-set-results.png)
 
+#### Algorithm output
+
+```
+Predicting the Test set results
+
+ [0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0
+ 0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+ 0 0 0 0 1 1 1 1 0 0 1 0 0 1 1 0 0 1 0 0 0 0 0 1 1 1]
+
+
+Confusion Matrix
+ [[64  4]
+ [ 3 29]]
+
+
+Accuracy in each of the 10 folds
+ [0.80645161 0.96666667 0.8        0.93333333 0.86666667 0.83333333
+ 0.93333333 0.93333333 0.96666667 0.96551724]
+
+
+Average accuracy after 10-Fold Cross Validation
+ 0.9005302187615868
+
+
+Average standard deviation after 10-Fold Cross Validation
+ 0.06388957356626285
+
+
+Grid Search: Best accuracy
+ 0.9033333333333333
+
+
+Grid Search: Best parameters
+ {'C': 1, 'gamma': 0.7, 'kernel': 'rbf'}
+```
+
 Go to [Contents](#contents)
 
 ## Boosting
@@ -1195,6 +1259,31 @@ a. [xg_boost.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_py
 * Accuracy in each of the 10 folds
 * Average accuracy after 10-Fold Cross Validation
 * Average standard deviation after 10-Fold Cross Validation
+
+#### Algorithm output
+
+```
+Predicting the Test set results
+ [0 0 0 ... 0 0 0]
+
+
+Confusion Matrix
+ [[1521   74]
+ [ 197  208]]
+
+
+Accuracy in each of the 10 folds
+ [0.86891386 0.8576779  0.885      0.86625    0.85875    0.855
+ 0.86625    0.85       0.8485607  0.87359199]
+
+
+Average accuracy after 10-Fold Cross Validation
+ 0.8629994451163204
+
+
+Average standard deviation after 10-Fold Cross Validation
+ 0.010677872171663988
+```
 
 Go to [Contents](#contents)
 
