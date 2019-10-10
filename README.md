@@ -1147,6 +1147,8 @@ Grid search then trains an SVM with each pair (C, K) in the Cartesian product of
 
 Grid search suffers from the curse of dimensionality but is often embarrassingly parallel because the hyperparameter settings it evaluates are typically independent of each other.
 
+Imagine a situation where you don't know if your problem is linear or non-linear. And that is not an obvious question especially when you have a large data set that you cannot figure out if your data is linearly separable or if you would rather choose a linear model like SVM or a non-linear model like Kernel SVM. This question can be answered by the Grid Search technique.
+
 In summary, Grid Search is used to know which parameter to select when you choose a machine learning model and what is the optimal value of these hyperparameters.
 
 a. [grid_search.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/1_model_selection/grid_search.py)
