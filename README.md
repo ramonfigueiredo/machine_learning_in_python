@@ -1175,7 +1175,13 @@ Go to [Contents](#contents)
 
 ## Boosting
 
+Boosting is a machine learning ensemble meta-algorithm for primarily reducing bias, and also variance in supervised learning, and a family of machine learning algorithms that convert weak learners to strong ones.
+
 ### XG Boost
+
+XGBoost (https://xgboost.readthedocs.io/en/latest/) is an open-source Gradient Boosting (GBM, GBRT, GBDT) library which provides a gradient boosting framework for Python, R, C++, Java, and Julia. It works on Linux, Windows, and macOS.
+
+XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way. The same code runs on major distributed environment (Hadoop, SGE, MPI) and can solve problems beyond billions of examples.
 
 a. [xg_boost.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/10_model_selection_and_boosting/2_xg_boost/xg_boost.py)
 
