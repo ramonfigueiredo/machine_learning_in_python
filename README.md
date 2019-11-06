@@ -799,7 +799,7 @@ Go to [Contents](#contents)
 
 a.  [cnn.py](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/2_convolutional_neural_networks/cnn.py)
 
-* Using a dataset with 10000 images of cats and dogs ([cats and dogs dataset](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/2_convolutional_neural_networks/dataset))
+* Using a dataset with 10000 images of cats and dogs ([cats and dogs dataset](https://github.com/ramonfigueiredopessoa/machine_learning_in_python/blob/master/src/8_deep_learning/2_convolutional_neural_networks/dataset.txt))
 	* Training set: 8000 (4000 cat images + 4000 dogs images)
 	* Test set: 2000 (1000 cat images + 1000 dogs images)
 * Creating the Convolutional Neural Network using [Keras](https://keras.io/)
